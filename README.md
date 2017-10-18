@@ -2,6 +2,10 @@
 
 We present VersaPipe, a framework for pipelined computing on GPU. We propose two execution models (coarse pipeline model and fine pipeline model) and a hybrid model to take advantage of all existing models. The hybrid pipeline model explores both temporal and spatial schedulings. The Versapipe framework implements the hybrid model and provide an auto-tuner that can automatically configure the pipeline with a combination of models.
 
+## Publication 
+
+"VersaPipe: A Versatile Programming Framework for Pipelined Computing on GPU", Zhen Zheng, Chanyoung Oh, Jidong Zhai, Xipeng Shen, Youngmin Yi, Wenguang Chen, The 50th Annual IEEE/ACM International Symposium on Microarchitecture, Boston, USA, Oct 14-18, 2017.
+
 ## Getting started
 
 ### Building on Linux
