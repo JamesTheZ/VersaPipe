@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zhengzhen/workspace/pipeline/basicversion/reyesDP/basicTypes/vecs.cpp
+vecs.h
+/home/zhengzhen/workspace/pipeline/basicversion/reyesDP/basicTypes/vecs.h
+
+/home/zhengzhen/workspace/pipeline/basicversion/reyesDP/basicTypes/vecs.h
+cstdio
+-
+cmath
+-
+

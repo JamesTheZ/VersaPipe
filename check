@@ -1,0 +1,32 @@
+procedureInterface.cuh:  int ProcedureId;
+procedureInterface.cuh:    d.ProcedureId = proc_id;
+procedureInterface.cuh:  //static const int ProcedureId = 0;
+procedureInterface.cuh:  static const char* name() { return "Unnamed_"; }// + std::to_string((unsigned long long)ProcedureId); }
+procedureInterface.cuh:  //static const int ProcedureId = -1;
+procinfoTemplate.cuh:	template<class ProcedureIdentifier>
+procinfoTemplate.cuh:		__inline__ __device__ static unsigned int eval(ProcedureIdentifier procIdentifier, void* data)
+procinfoTemplate.cuh:		static const int ProcedureId = 0;
+procinfoTemplate.cuh:		static const int ProcedureId = Next::ProcedureId + 1;
+procinfoTemplate.cuh:		static const int MaxId =  maxOperator< ProcedureId, Next::MaxId>::result;
+procinfoTemplate.cuh:				//printf("proc %d can execute %d items at maximum: %d %d %d\n", PROCEDURE::ProcedureId, num, (mysharedMul.x*num + mysharedAbs.x +15)/16*16, (mysharedMul.y*num + mysharedAbs.y +15)/16*16, (mysharedMul.z*num + mysharedAbs.z +15)/16*16);
+procinfoTemplate.cuh:	static const int value = selectProcId<typesEqual<typename ProcInfo::Procedure, Proc>::value, ProcInfo::ProcedureId, findProcId<typename ProcInfo::Next, Proc>::value>::value;
+procinfoTemplate.cuh:class ProcedureIdentifier
+procinfoTemplate.cuh:	__inline__ __device__ ProcedureIdentifier(int procId) : procId(procId) { };
+procinfoTemplate.cuh:	// 得到TProc对应的ProcedureIdentifier
+procinfoTemplate.cuh:		__inline__ __device__ static ProcedureIdentifier create()
+procinfoTemplate.cuh:			return ProcedureIdentifier(findProcId<TProcInfo, TProc>::value);
+procinfoTemplate.cuh:				printf("TProcInfo::ProcedureId: %d,size in data: %d\n",
+procinfoTemplate.cuh:						TProcInfo::ProcedureId, data.size());
+procinfoTemplate.cuh:			//if(ProcId == TProcInfo::Procedure::ProcedureId)
+procinfoTemplate.cuh:				printf("ProcId: %d, TProcInfo::ProcedureId: %d,size in data: %d\n",
+procinfoTemplate.cuh:						ProcId, TProcInfo::ProcedureId, data.size());
+procinfoTemplate.cuh:			if(ProcId == TProcInfo::ProcedureId)
+queueShared.cuh:					*procId = MyProc::ProcedureId;
+queuingPerProc.cuh:					res = q.dequeueSelected(data, TQAttachment::ProcedureId, maxNum);
+queuingPerProc.cuh:					res = q.dequeueStartRead(data, TQAttachment::ProcedureId, maxNum);
+techniqueDynamicParallelism.cuh:			//printf("launching %d\n",PROC::ProcedureId);
+techniqueDynamicParallelism.cuh:	//case PROCINFO:: Procedure ## PROCID :: ProcedureId: \
+techniqueDynamicParallelism.cuh:				//printf("launching %d %d for proc: %d\n",blocks, blockSize, PROC::ProcedureId);
+techniqueDynamicParallelism.cuh:					//  if(PROCINFO::Procedure ## ProcNum::ProcedureId >= 0) \
+techniqueMegakernel.cuh:			if(*execproc == TProcedure::ProcedureId)  \
+techniqueMegakernel.cuh:								//printf("TProcInfo::ProcedureId: %d\n", i);
