@@ -1,0 +1,6 @@
+
+
+*.ptx.*commented
+
+bin/
+obj/

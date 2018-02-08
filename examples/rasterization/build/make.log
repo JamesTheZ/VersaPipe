@@ -1,0 +1,385 @@
+[ 10%] Building NVCC (Device) object CMakeFiles/loop.dir/basicTypes/loop_generated_vecs.cu.o
+CMake Warning (dev) at loop_generated_vecs.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_vecs.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ptxas info    : 0 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 20%] Building NVCC (Device) object CMakeFiles/loop.dir/__/__/loop_generated_techniqueMegakernel.cu.o
+CMake Warning (dev) at loop_generated_techniqueMegakernel.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_techniqueMegakernel.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ptxas info    : 12296 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 30%] Building NVCC (Device) object CMakeFiles/loop.dir/__/__/loop_generated_techniqueKernels.cu.o
+CMake Warning (dev) at loop_generated_techniqueKernels.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_techniqueKernels.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ptxas info    : 4096 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 40%] Building NVCC (Device) object CMakeFiles/loop.dir/__/__/loop_generated_delay.cu.o
+CMake Warning (dev) at loop_generated_delay.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_delay.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ptxas info    : 4194304 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 50%] Building NVCC (Device) object CMakeFiles/loop.dir/__/__/loop_generated_segmentedStorage.cu.o
+CMake Warning (dev) at loop_generated_segmentedStorage.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_segmentedStorage.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ptxas info    : 82 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 60%] Building NVCC (Device) object CMakeFiles/loop.dir/loop_generated_main.cu.o
+CMake Warning (dev) at loop_generated_main.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_main.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/api/include/piko/math.h(327)[0m:[33m [0m[33mwarning[0m:[33m[1m integer conversion resulted in a change of sign
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/api/include/piko/math.h(332)[0m:[33m [0m[33mwarning[0m:[33m[1m integer conversion resulted in a change of sign
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/vertexShader.h(259)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "minZ" is used before its value is set
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/vertexShader.h(259)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "maxZ" is used before its value is set
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/rasterPipe.h(32)[0m:[33m [0m[33mwarning[0m:[33m[1m extra ";" ignored
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/pipeline.cuh(244)[0m:[33m [0m[33mwarning[0m:[33m[1m the "template" keyword used for syntactic disambiguation may only be used within a template
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/main.cu(584)[0m:[33m [0m[33mwarning[0m:[33m[1m integer conversion resulted in a change of sign
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/pipeline.cuh(324)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "minZ" is used before its value is set
+[0m          detected during:
+            instantiation of "void Megakernel::FuncCaller<Q, ProcInfo, PROC, CUSTOM, true, MultiElement>::call(Q *, void *, int, uint *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, PROC=Vertex, CUSTOM=void, MultiElement=true]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(292): here
+            instantiation of "__nv_bool Megakernel::ProcCallNoCopyVisitor<Q, ProcInfo, MultiElement>::visit<TProcedure,CUSTOM>() [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, MultiElement=true, TProcedure=Vertex, CUSTOM=void]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(844): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(521): here
+            instantiation of "int Megakernel::MegakernelLogics<Q, PROCINFO, CUSTOM, false, MultiElement, false>::run(Q *, uint4) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, MultiElement=true]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(924): here
+            instantiation of "void Megakernel::megakernelSpecific<Q,PROCINFO,CUSTOM,CopyToShared,MultiElement,Maintainer,TimeLimiter,StopCriteria>(int, int, Q *, uint4, int, int *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, CopyToShared=false, MultiElement=true, Maintainer=true, TimeLimiter=Megakernel::TimeLimiter<0ULL, false>, StopCriteria=Megakernel::EmptyQueue]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(1210): here
+            instantiation of "__nv_bool Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::InitPhaseSpecificVisitor::visit<TProcInfo,TQueue,Phase>() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false, TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TQueue=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, Phase=0]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(765): here
+            instantiation of "__nv_bool PhaseQueues<InternalQueue, ProcedureInfo, Phase, NumPhases>::staticVisit(Visitor &) [with InternalQueue=MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, ProcedureInfo=procInfo, Phase=0, NumPhases=1, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(539): here
+            instantiation of "__nv_bool MultiPhaseQueue<TProcedureInfo, TInternalQueue, TMultiPhaseQueue>::staticVisit(Visitor &) [with TProcedureInfo=procInfo, TInternalQueue=MyQueue, TMultiPhaseQueue=void, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(1331): here
+            instantiation of "void Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::init() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/__pikoCompiledPipe.h(275): here
+
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/pipeline.cuh(324)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "maxZ" is used before its value is set
+[0m          detected during:
+            instantiation of "void Megakernel::FuncCaller<Q, ProcInfo, PROC, CUSTOM, true, MultiElement>::call(Q *, void *, int, uint *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, PROC=Vertex, CUSTOM=void, MultiElement=true]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(292): here
+            instantiation of "__nv_bool Megakernel::ProcCallNoCopyVisitor<Q, ProcInfo, MultiElement>::visit<TProcedure,CUSTOM>() [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, MultiElement=true, TProcedure=Vertex, CUSTOM=void]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(844): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(521): here
+            instantiation of "int Megakernel::MegakernelLogics<Q, PROCINFO, CUSTOM, false, MultiElement, false>::run(Q *, uint4) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, MultiElement=true]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(924): here
+            instantiation of "void Megakernel::megakernelSpecific<Q,PROCINFO,CUSTOM,CopyToShared,MultiElement,Maintainer,TimeLimiter,StopCriteria>(int, int, Q *, uint4, int, int *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, CopyToShared=false, MultiElement=true, Maintainer=true, TimeLimiter=Megakernel::TimeLimiter<0ULL, false>, StopCriteria=Megakernel::EmptyQueue]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(1210): here
+            instantiation of "__nv_bool Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::InitPhaseSpecificVisitor::visit<TProcInfo,TQueue,Phase>() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false, TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TQueue=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, Phase=0]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(765): here
+            instantiation of "__nv_bool PhaseQueues<InternalQueue, ProcedureInfo, Phase, NumPhases>::staticVisit(Visitor &) [with InternalQueue=MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, ProcedureInfo=procInfo, Phase=0, NumPhases=1, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(539): here
+            instantiation of "__nv_bool MultiPhaseQueue<TProcedureInfo, TInternalQueue, TMultiPhaseQueue>::staticVisit(Visitor &) [with TProcedureInfo=procInfo, TInternalQueue=MyQueue, TMultiPhaseQueue=void, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(1331): here
+            instantiation of "void Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::init() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/__pikoCompiledPipe.h(275): here
+
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(202)[0m:[33m [0m[33mwarning[0m:[33m[1m right operand of "%" is zero
+[0m          detected during:
+            instantiation of "void Megakernel::FuncCaller<Q, ProcInfo, PROC, CUSTOM, false, true>::call(Q *, void *, int, uint *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, PROC=ProcInfoEnd::Procedure, CUSTOM=void]" 
+(292): here
+            instantiation of "__nv_bool Megakernel::ProcCallNoCopyVisitor<Q, ProcInfo, MultiElement>::visit<TProcedure,CUSTOM>() [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, MultiElement=true, TProcedure=ProcInfoEnd::Procedure, CUSTOM=void]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(844): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfoInter<PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, ProcInfoEnd, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(846): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfoInter<PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, N<Raster, 1, ProcInfoEnd>, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(846): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+(521): here
+            instantiation of "int Megakernel::MegakernelLogics<Q, PROCINFO, CUSTOM, false, MultiElement, false>::run(Q *, uint4) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, MultiElement=true]" 
+(924): here
+            instantiation of "void Megakernel::megakernelSpecific<Q,PROCINFO,CUSTOM,CopyToShared,MultiElement,Maintainer,TimeLimiter,StopCriteria>(int, int, Q *, uint4, int, int *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, CopyToShared=false, MultiElement=true, Maintainer=true, TimeLimiter=Megakernel::TimeLimiter<0ULL, false>, StopCriteria=Megakernel::EmptyQueue]" 
+(1210): here
+            instantiation of "__nv_bool Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::InitPhaseSpecificVisitor::visit<TProcInfo,TQueue,Phase>() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false, TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TQueue=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, Phase=0]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(765): here
+            instantiation of "__nv_bool PhaseQueues<InternalQueue, ProcedureInfo, Phase, NumPhases>::staticVisit(Visitor &) [with InternalQueue=MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, ProcedureInfo=procInfo, Phase=0, NumPhases=1, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(539): here
+            instantiation of "__nv_bool MultiPhaseQueue<TProcedureInfo, TInternalQueue, TMultiPhaseQueue>::staticVisit(Visitor &) [with TProcedureInfo=procInfo, TInternalQueue=MyQueue, TMultiPhaseQueue=void, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+(1331): here
+            instantiation of "void Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::init() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/__pikoCompiledPipe.h(275): here
+
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(203)[0m:[33m [0m[33mwarning[0m:[33m[1m division by zero
+[0m          detected during:
+            instantiation of "void Megakernel::FuncCaller<Q, ProcInfo, PROC, CUSTOM, false, true>::call(Q *, void *, int, uint *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, PROC=ProcInfoEnd::Procedure, CUSTOM=void]" 
+(292): here
+            instantiation of "__nv_bool Megakernel::ProcCallNoCopyVisitor<Q, ProcInfo, MultiElement>::visit<TProcedure,CUSTOM>() [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, ProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, MultiElement=true, TProcedure=ProcInfoEnd::Procedure, CUSTOM=void]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(844): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfoInter<PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, ProcInfoEnd, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(846): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfoInter<PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, N<Raster, 1, ProcInfoEnd>, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/procinfoTemplate.cuh(846): here
+            instantiation of "__nv_bool ProcInfoVisitor<TProcInfo, TCustom>::Visit(Visitor &) [with TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TCustom=void, Visitor=Megakernel::ProcCallNoCopyVisitor<CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, true>]" 
+(521): here
+            instantiation of "int Megakernel::MegakernelLogics<Q, PROCINFO, CUSTOM, false, MultiElement, false>::run(Q *, uint4) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, MultiElement=true]" 
+(924): here
+            instantiation of "void Megakernel::megakernelSpecific<Q,PROCINFO,CUSTOM,CopyToShared,MultiElement,Maintainer,TimeLimiter,StopCriteria>(int, int, Q *, uint4, int, int *) [with Q=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, PROCINFO=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, CUSTOM=void, CopyToShared=false, MultiElement=true, Maintainer=true, TimeLimiter=Megakernel::TimeLimiter<0ULL, false>, StopCriteria=Megakernel::EmptyQueue]" 
+(1210): here
+            instantiation of "__nv_bool Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::InitPhaseSpecificVisitor::visit<TProcInfo,TQueue,Phase>() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false, TProcInfo=PhaseProcInfo<ProcInfo<Vertex, 2, N<Raster, 1, ProcInfoEnd>>::Priority<0>, PhaseQueues<MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, procInfo, 0, 1>::MyPhaseTraits, procInfo, 0, true>, TQueue=CurrentMultiphaseQueue<MultiPhaseQueue<procInfo, MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, void>, 0>, Phase=0]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(765): here
+            instantiation of "__nv_bool PhaseQueues<InternalQueue, ProcedureInfo, Phase, NumPhases>::staticVisit(Visitor &) [with InternalQueue=MultiPhaseQueue<procInfo, MyQueue, void>::InternalQueue, ProcedureInfo=procInfo, Phase=0, NumPhases=1, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/queuingMultiPhase.cuh(539): here
+            instantiation of "__nv_bool MultiPhaseQueue<TProcedureInfo, TInternalQueue, TMultiPhaseQueue>::staticVisit(Visitor &) [with TProcedureInfo=procInfo, TInternalQueue=MyQueue, TMultiPhaseQueue=void, Visitor=Megakernel::TechniqueCore<0, MyQueue, procInfo, void, 16336, false, true, false, false>::InitPhaseSpecificVisitor]" 
+(1331): here
+            instantiation of "void Megakernel::TechniqueCore<groupId, QUEUE, PROCINFO, ApplicationContext, maxShared, LoadToShared, MultiElement, StaticTimelimit, DynamicTimelimit>::init() [with groupId=0, QUEUE=MyQueue, PROCINFO=procInfo, ApplicationContext=void, maxShared=16336, LoadToShared=false, MultiElement=true, StaticTimelimit=false, DynamicTimelimit=false]" 
+/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/__pikoCompiledPipe.h(275): here
+
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/api/include/piko/math.h(327)[0m:[33m [0m[33mwarning[0m:[33m[1m integer conversion resulted in a change of sign
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/api/include/piko/math.h(332)[0m:[33m [0m[33mwarning[0m:[33m[1m integer conversion resulted in a change of sign
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/vertexShader.h(259)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "minZ" is used before its value is set
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/vertexShader.h(259)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "maxZ" is used before its value is set
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/rasterPipe.h(32)[0m:[33m [0m[33mwarning[0m:[33m[1m extra ";" ignored
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/queueShared.cuh(764)[0m:[33m [0m[33mwarning[0m:[33m[1m expression has no effect
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/queueShared.cuh(768)[0m:[33m [0m[33mwarning[0m:[33m[1m expression has no effect
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/queueShared.cuh(781)[0m:[33m [0m[33mwarning[0m:[33m[1m expression has no effect
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/queueShared.cuh(795)[0m:[33m [0m[33mwarning[0m:[33m[1m expression has no effect
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/queueShared.cuh(810)[0m:[33m [0m[33mwarning[0m:[33m[1m expression has no effect
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/queueShared.cuh(825)[0m:[33m [0m[33mwarning[0m:[33m[1m expression has no effect
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/techniqueMegakernel.cuh(1583)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "procNum" was declared but never referenced
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/pipeline.cuh(244)[0m:[33m [0m[33mwarning[0m:[33m[1m the "template" keyword used for syntactic disambiguation may only be used within a template
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/pipeline.cuh(324)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "minZ" is used before its value is set
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/pipeline.cuh(324)[0m:[33m [0m[33mwarning[0m:[33m[1m variable "maxZ" is used before its value is set
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/main.cu(584)[0m:[33m [0m[33mwarning[0m:[33m[1m integer conversion resulted in a change of sign
+[0m
+ptxas info    : 243146047 bytes gmem, 216 bytes cmem[3]
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Compiling entry function '_Z9initQueueI22CurrentMultiphaseQueueI15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEE7MyQueuevELi0EEEvPT_' for 'sm_35'
+ptxas info    : Function properties for _Z9initQueueI22CurrentMultiphaseQueueI15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEE7MyQueuevELi0EEEvPT_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, 328 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Compiling entry function '_ZN10Megakernel10megakernelI22CurrentMultiphaseQueueI15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEENS2_IS9_7MyQueuevE13InternalQueueEvELi0EE13PhaseProcInfoINS9_8PriorityILi0EEEN11PhaseQueuesISC_S9_Li0ELi1EE13MyPhaseTraitsES9_Li0ELb1EEvLb0ELb1ELb0ENS_11TimeLimiterILy0ELb0EEELNS_22MegakernelStopCriteriaE0EEEvPT_5uint4iPi' for 'sm_35'
+ptxas info    : Function properties for _ZN10Megakernel10megakernelI22CurrentMultiphaseQueueI15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEENS2_IS9_7MyQueuevE13InternalQueueEvELi0EE13PhaseProcInfoINS9_8PriorityILi0EEEN11PhaseQueuesISC_S9_Li0ELi1EE13MyPhaseTraitsES9_Li0ELb1EEvLb0ELb1ELb0ENS_11TimeLimiterILy0ELb0EEELNS_22MegakernelStopCriteriaE0EEEvPT_5uint4iPi
+    80 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 101 registers, 368 bytes cmem[0], 12 bytes cmem[2]
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Compiling entry function '_ZN10Megakernel18megakernelSpecificI22CurrentMultiphaseQueueI15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEENS2_IS9_7MyQueuevE13InternalQueueEvELi0EE13PhaseProcInfoINS9_8PriorityILi0EEEN11PhaseQueuesISC_S9_Li0ELi1EE13MyPhaseTraitsES9_Li0ELb1EEvLb0ELb1ELb1ENS_11TimeLimiterILy0ELb0EEELNS_22MegakernelStopCriteriaE0EEEviiPT_5uint4iPi' for 'sm_35'
+ptxas info    : Function properties for _ZN10Megakernel18megakernelSpecificI22CurrentMultiphaseQueueI15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEENS2_IS9_7MyQueuevE13InternalQueueEvELi0EE13PhaseProcInfoINS9_8PriorityILi0EEEN11PhaseQueuesISC_S9_Li0ELi1EE13MyPhaseTraitsES9_Li0ELb1EEvLb0ELb1ELb1ENS_11TimeLimiterILy0ELb0EEELNS_22MegakernelStopCriteriaE0EEEviiPT_5uint4iPi
+    80 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 101 registers, 368 bytes cmem[0], 12 bytes cmem[2]
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Compiling entry function '_ZN10Megakernel8initDataI8InitProc22CurrentMultiphaseQueueIS2_I15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEE7MyQueuevELi0EELi0EE11raster_wtriEEvPT0_iPT1_' for 'sm_35'
+ptxas info    : Function properties for _ZN10Megakernel8initDataI8InitProc22CurrentMultiphaseQueueIS2_I15MultiPhaseQueueI8ProcInfoI6VertexLi2E1NI6RasterLi1E11ProcInfoEndEE7MyQueuevELi0EELi0EE11raster_wtriEEvPT0_iPT1_
+    80 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 78 registers, 344 bytes cmem[0], 12 bytes cmem[2]
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 70%] Building NVCC (Device) object CMakeFiles/loop.dir/sceneParser/loop_generated_sceneParser.cu.o
+CMake Warning (dev) at loop_generated_sceneParser.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_sceneParser.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/sceneParser/sceneParser.cu(585)[0m:[33m [0m[33mwarning[0m:[33m[1m statement is unreachable
+[0m
+[35m[1m/home/zhengzhen/workspace/pipeline/HybridPipe/examples/rasterization/sceneParser/sceneParser.cu(585)[0m:[33m [0m[33mwarning[0m:[33m[1m statement is unreachable
+[0m
+ptxas info    : 0 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 80%] Building NVCC (Device) object CMakeFiles/loop.dir/bezmesh/loop_generated_bezmesh.cu.o
+CMake Warning (dev) at loop_generated_bezmesh.cu.o.cmake:126 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted keywords like "COMMAND" will no longer be interpreted as keywords
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  loop_generated_bezmesh.cu.o.cmake:153 (cuda_execute_process)
+  
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ptxas info    : 0 bytes gmem
+ptxas info    : Function properties for cudaGetDevice
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaFuncGetAttributes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaDeviceGetAttribute
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaMalloc
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Function properties for cudaOccupancyMaxActiveBlocksPerMultiprocessor
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+[ 90%] Building NVCC intermediate link file CMakeFiles/loop.dir/loop_intermediate_link.o
+[100%] Linking CXX executable loop
+[100%] Built target loop

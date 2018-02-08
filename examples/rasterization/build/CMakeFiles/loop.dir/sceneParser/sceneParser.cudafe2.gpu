@@ -1,0 +1,22 @@
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 196 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__used__)) __attribute__((visibility("default"))) void *malloc(size_t __T10);
+# 197 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__used__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void free(void *__T11);
+# 975 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long _ZTVSt9basic_iosIcSt11char_traitsIcEE[4];
+# 976 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long *const _ZTTSi[];
+# 977 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long _ZTVSt15basic_streambufIcSt11char_traitsIcEE[16];
+# 978 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long *const _ZTTSo[];
+# 979 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long *const _ZTTSd[];
+# 980 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long _ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE[16];
+# 981 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+extern  __device__  __var_used__ const long *const _ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE[];
+#include "common_functions.h"

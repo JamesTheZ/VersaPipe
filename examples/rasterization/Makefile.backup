@@ -1,0 +1,27 @@
+NVCC = nvcc
+COMMON_INCLUDES :=  -I/usr/local/cuda/include -I./api/include -I. -IbasicTypes/ -IsceneParser/ -Iutil/ -Iassimp/include -Ibezmesh/
+ASSIMP_LIB_PATH := -Lassimp/lib/
+ASSIMP_LIB := -lassimp
+OBJS := vecs.o sceneParser.o bezmesh.o
+
+FLAGS=-D__PIKOC_HOST__ -std=c++11 
+
+all: raster
+
+raster: main.cu $(OBJS) basicTypes/rasterTypes.h
+	nvcc -o raster -I. $(COMMON_INCLUDES) main.cu $(ASSIMP_LIB_PATH) $(ASSIMP_LIB) $(OBJS) $(FLAGS)
+
+#EasyBMP.o: 
+#	g++ EasyBMP/EasyBMP.cpp  $(COMMON_INCLUDES) -c -o EasyBMP.o $(FLAGS)
+
+vecs.o: 
+	nvcc basicTypes/vecs.cu $(COMMON_INCLUDES) -c -o vecs.o $(FLAGS)
+
+sceneParser.o: 
+	nvcc sceneParser/sceneParser.cu $(COMMON_INCLUDES) $(ASSIMP_LIB_PATH) $(ASSIMP_LIB) -c -o sceneParser.o $(FLAGS)
+
+bezmesh.o: 
+	nvcc bezmesh/bezmesh.cu $(COMMON_INCLUDES) $(ASSIMP_LIB_PATH) $(ASSIMP_LIB) -c -o bezmesh.o $(FLAGS)
+
+clean:
+	rm raster $(OBJS)

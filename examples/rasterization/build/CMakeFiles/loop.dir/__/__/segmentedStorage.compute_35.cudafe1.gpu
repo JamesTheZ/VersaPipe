@@ -1,0 +1,3133 @@
+typedef char __nv_bool;
+struct __C1;struct __C2;struct __C3;struct __C4;struct __C5;union __C6;struct __C7;struct __type_info;struct __class_type_info;struct __si_class_type_info;
+# 54 "/usr/local/cuda-8.0/include/library_types.h"
+enum cudaDataType_t {
+# 56 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_16F = 2,
+# 57 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_16F = 6,
+# 58 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_32F = 0,
+# 59 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_32F = 4,
+# 60 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_64F = 1,
+# 61 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_64F = 5,
+# 62 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_8I = 3,
+# 63 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_8I = 7,
+# 64 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_8U,
+# 65 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_8U,
+# 66 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_32I,
+# 67 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_32I,
+# 68 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_R_32U,
+# 69 "/usr/local/cuda-8.0/include/library_types.h"
+CUDA_C_32U};
+# 73 "/usr/local/cuda-8.0/include/library_types.h"
+enum libraryPropertyType_t {
+# 75 "/usr/local/cuda-8.0/include/library_types.h"
+MAJOR_VERSION,
+# 76 "/usr/local/cuda-8.0/include/library_types.h"
+MINOR_VERSION,
+# 77 "/usr/local/cuda-8.0/include/library_types.h"
+PATCH_LEVEL};
+# 176 "/usr/include/libio.h" 3
+enum __codecvt_result {
+# 178 "/usr/include/libio.h" 3
+__codecvt_ok,
+# 179 "/usr/include/libio.h" 3
+__codecvt_partial,
+# 180 "/usr/include/libio.h" 3
+__codecvt_error,
+# 181 "/usr/include/libio.h" 3
+__codecvt_noconv};
+# 51 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+enum idtype_t {
+# 52 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+P_ALL,
+# 53 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+P_PID,
+# 54 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+P_PGID};
+# 210 "/usr/include/math.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut_E {
+# 211 "/usr/include/math.h" 3
+FP_NAN,
+# 214 "/usr/include/math.h" 3
+FP_INFINITE,
+# 217 "/usr/include/math.h" 3
+FP_ZERO,
+# 220 "/usr/include/math.h" 3
+FP_SUBNORMAL,
+# 223 "/usr/include/math.h" 3
+FP_NORMAL};
+# 348 "/usr/include/math.h" 3
+enum _LIB_VERSION_TYPE {
+# 349 "/usr/include/math.h" 3
+_IEEE_ = (-1),
+# 350 "/usr/include/math.h" 3
+_SVID_,
+# 351 "/usr/include/math.h" 3
+_XOPEN_,
+# 352 "/usr/include/math.h" 3
+_POSIX_,
+# 353 "/usr/include/math.h" 3
+_ISOC_};
+# 47 "/usr/include/ctype.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut0_E {
+# 48 "/usr/include/ctype.h" 3
+_ISupper = 256,
+# 49 "/usr/include/ctype.h" 3
+_ISlower = 512,
+# 50 "/usr/include/ctype.h" 3
+_ISalpha = 1024,
+# 51 "/usr/include/ctype.h" 3
+_ISdigit = 2048,
+# 52 "/usr/include/ctype.h" 3
+_ISxdigit = 4096,
+# 53 "/usr/include/ctype.h" 3
+_ISspace = 8192,
+# 54 "/usr/include/ctype.h" 3
+_ISprint = 16384,
+# 55 "/usr/include/ctype.h" 3
+_ISgraph = 32768,
+# 56 "/usr/include/ctype.h" 3
+_ISblank = 1,
+# 57 "/usr/include/ctype.h" 3
+_IScntrl,
+# 58 "/usr/include/ctype.h" 3
+_ISpunct = 4,
+# 59 "/usr/include/ctype.h" 3
+_ISalnum = 8};
+# 33 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut1_E {
+# 34 "/usr/include/pthread.h" 3
+PTHREAD_CREATE_JOINABLE,
+# 36 "/usr/include/pthread.h" 3
+PTHREAD_CREATE_DETACHED};
+# 43 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut2_E {
+# 44 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_TIMED_NP,
+# 45 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_RECURSIVE_NP,
+# 46 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_ERRORCHECK_NP,
+# 47 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_ADAPTIVE_NP,
+# 50 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_NORMAL = 0,
+# 51 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_RECURSIVE,
+# 52 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_ERRORCHECK,
+# 53 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_DEFAULT = 0,
+# 57 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_FAST_NP = 0};
+# 65 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut3_E {
+# 66 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_STALLED,
+# 67 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_STALLED_NP = 0,
+# 68 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_ROBUST,
+# 69 "/usr/include/pthread.h" 3
+PTHREAD_MUTEX_ROBUST_NP = 1};
+# 77 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut4_E {
+# 78 "/usr/include/pthread.h" 3
+PTHREAD_PRIO_NONE,
+# 79 "/usr/include/pthread.h" 3
+PTHREAD_PRIO_INHERIT,
+# 80 "/usr/include/pthread.h" 3
+PTHREAD_PRIO_PROTECT};
+# 115 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut5_E {
+# 116 "/usr/include/pthread.h" 3
+PTHREAD_RWLOCK_PREFER_READER_NP,
+# 117 "/usr/include/pthread.h" 3
+PTHREAD_RWLOCK_PREFER_WRITER_NP,
+# 118 "/usr/include/pthread.h" 3
+PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP,
+# 119 "/usr/include/pthread.h" 3
+PTHREAD_RWLOCK_DEFAULT_NP = 0};
+# 156 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut6_E {
+# 157 "/usr/include/pthread.h" 3
+PTHREAD_INHERIT_SCHED,
+# 159 "/usr/include/pthread.h" 3
+PTHREAD_EXPLICIT_SCHED};
+# 166 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut7_E {
+# 167 "/usr/include/pthread.h" 3
+PTHREAD_SCOPE_SYSTEM,
+# 169 "/usr/include/pthread.h" 3
+PTHREAD_SCOPE_PROCESS};
+# 176 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut8_E {
+# 177 "/usr/include/pthread.h" 3
+PTHREAD_PROCESS_PRIVATE,
+# 179 "/usr/include/pthread.h" 3
+PTHREAD_PROCESS_SHARED};
+# 200 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut9_E {
+# 201 "/usr/include/pthread.h" 3
+PTHREAD_CANCEL_ENABLE,
+# 203 "/usr/include/pthread.h" 3
+PTHREAD_CANCEL_DISABLE};
+# 207 "/usr/include/pthread.h" 3
+enum _ZN57_INTERNAL_35_segmentedStorage_compute_61_cpp1_ii_2b81d216Ut10_E {
+# 208 "/usr/include/pthread.h" 3
+PTHREAD_CANCEL_DEFERRED,
+# 210 "/usr/include/pthread.h" 3
+PTHREAD_CANCEL_ASYNCHRONOUS};
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+union _ZZ10__signbitlEUt_;
+# 106 "/usr/include/c++/5/bits/basic_string.h" 3
+struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderE;
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEUt_E {
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17_S_local_capacityE = 15};
+# 120 "/usr/include/c++/5/bits/basic_string.h" 3
+union __C10;
+# 71 "/usr/include/c++/5/bits/stringfwd.h" 3
+struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE;
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEUt_E {
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE17_S_local_capacityE = 3};
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEUt_E {
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEE17_S_local_capacityE = 7};
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEEUt_E {
+# 117 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEE17_S_local_capacityE = 3};
+# 60 "/usr/include/c++/5/exception" 3
+struct _ZSt9exception;
+# 82 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+struct _ZSt11__true_type;
+# 83 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+struct _ZSt12__false_type;
+# 128 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_voidIvEUt_E {
+# 128 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt9__is_voidIvE7__valueE = 1};
+# 149 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIbEUt_E {
+# 149 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIbE7__valueE = 1};
+# 156 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIcEUt_E {
+# 156 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIcE7__valueE = 1};
+# 163 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIaEUt_E {
+# 163 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIaE7__valueE = 1};
+# 170 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIhEUt_E {
+# 170 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIhE7__valueE = 1};
+# 178 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIwEUt_E {
+# 178 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIwE7__valueE = 1};
+# 187 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIDsEUt_E {
+# 187 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIDsE7__valueE = 1};
+# 194 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIDiEUt_E {
+# 194 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIDiE7__valueE = 1};
+# 202 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIsEUt_E {
+# 202 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIsE7__valueE = 1};
+# 209 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerItEUt_E {
+# 209 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerItE7__valueE = 1};
+# 216 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIiEUt_E {
+# 216 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIiE7__valueE = 1};
+# 223 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIjEUt_E {
+# 223 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIjE7__valueE = 1};
+# 230 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIlEUt_E {
+# 230 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIlE7__valueE = 1};
+# 237 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerImEUt_E {
+# 237 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerImE7__valueE = 1};
+# 244 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIxEUt_E {
+# 244 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIxE7__valueE = 1};
+# 251 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIyEUt_E {
+# 251 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIyE7__valueE = 1};
+# 298 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIfEUt_E {
+# 298 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIfE7__valueE = 1};
+# 305 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIdEUt_E {
+# 305 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIdE7__valueE = 1};
+# 312 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIeEUt_E {
+# 312 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIeE7__valueE = 1};
+# 380 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_charIcEUt_E {
+# 380 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt9__is_charIcE7__valueE = 1};
+# 388 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_charIwEUt_E {
+# 388 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt9__is_charIwE7__valueE = 1};
+# 403 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_byteIcEUt_E {
+# 403 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt9__is_byteIcE7__valueE = 1};
+# 410 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_byteIaEUt_E {
+# 410 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt9__is_byteIaE7__valueE = 1};
+# 417 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_byteIhEUt_E {
+# 417 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt9__is_byteIhE7__valueE = 1};
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIeEUt_E {
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIeE7__valueE};
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIdEUt_E {
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIdE7__valueE};
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIfEUt_E {
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIfE7__valueE};
+# 89 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt18input_iterator_tag;
+# 95 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt20forward_iterator_tag;
+# 99 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt26bidirectional_iterator_tag;
+# 103 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt26random_access_iterator_tag;
+# 233 "/usr/include/c++/5/bits/char_traits.h" 3
+struct _ZSt11char_traitsIcE;
+# 64 "/usr/include/c++/5/bits/memoryfwd.h" 3
+struct _ZSaIcE;
+# 83 "/usr/include/c++/5/bits/alloc_traits.h" 3
+struct _ZSt16allocator_traitsISaIcEE;
+# 113 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIffEUt_E {
+# 113 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIffE7__valueE = 1};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIfdEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIfdE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIdfEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIdfE7__valueE};
+# 113 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIddEUt_E {
+# 113 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIddE7__valueE = 1};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIefEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIefE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIedEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIedE7__valueE};
+# 50 "/usr/include/c++/5/stdexcept" 3
+union __C9;
+# 48 "/usr/include/c++/5/stdexcept" 3
+struct _ZSt12__cow_string;
+# 192 "/usr/include/c++/5/stdexcept" 3
+struct _ZSt13runtime_error;
+# 1509 "/usr/include/c++/5/type_traits" 3
+struct _ZSt15remove_volatileIcE;
+# 1500 "/usr/include/c++/5/type_traits" 3
+struct _ZSt12remove_constIcE;
+# 1518 "/usr/include/c++/5/type_traits" 3
+struct _ZSt9remove_cvIcE;
+# 105 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt16__ptrtr_not_voidIccE;
+# 132 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt14pointer_traitsIPcE;
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIPKcEUt_E {
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIPKcE7__valueE};
+# 162 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt15iterator_traitsIPKcE;
+# 162 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt15iterator_traitsIPcE;
+# 1509 "/usr/include/c++/5/type_traits" 3
+struct _ZSt15remove_volatileIKcE;
+# 1500 "/usr/include/c++/5/type_traits" 3
+struct _ZSt12remove_constIKcE;
+# 1518 "/usr/include/c++/5/type_traits" 3
+struct _ZSt9remove_cvIKcE;
+# 105 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt16__ptrtr_not_voidIKccE;
+# 132 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt14pointer_traitsIPKcE;
+# 1575 "/usr/include/c++/5/type_traits" 3
+struct _ZSt16remove_referenceIRSaIcEE;
+# 113 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIiiEUt_E {
+# 113 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIiiE7__valueE = 1};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIliEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIliE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameImiEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameImiE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIxiEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIxiE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIyiEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIyiE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIfiEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIfiE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIdiEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIdiE7__valueE};
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt10__are_sameIeiEUt_E {
+# 106 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt10__are_sameIeiE7__valueE};
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIPcEUt_E {
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIPcE7__valueE};
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIPwEUt_E {
+# 138 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIPwE7__valueE};
+# 1575 "/usr/include/c++/5/type_traits" 3
+struct _ZSt16remove_referenceIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE;
+# 58 "/usr/include/c++/5/ext/new_allocator.h" 3
+struct _ZN9__gnu_cxx13new_allocatorIcEE;
+# 168 "/usr/include/c++/5/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIcEE6rebindIcEE;
+# 95 "/usr/include/c++/5/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIcEEE;
+# 721 "/usr/include/c++/5/bits/stl_iterator.h" 3
+struct _ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE;
+# 721 "/usr/include/c++/5/bits/stl_iterator.h" 3
+struct _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE;
+# 80 "/home/zhengzhen/workspace/versapipe/tools/utils.h"
+struct _ZN5Tools9CudaErrorE;typedef typeof(((__builtin_va_list*)0)[0][0]) __va_list_tag_type;
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+struct __C3 { struct __C2 *regions; void **obj_table; struct __C1 *array_table; unsigned short saved_region_number;char __nv_no_debug_dummy_end_padding_0[6];}; struct __C4 { const struct __type_info *tinfo; unsigned char flags; unsigned char *ptr_flags;}; struct __C5 { long setjmp_buffer[25]; struct __C4 *catch_entries; void *rtinfo; unsigned short region_number;char __nv_no_debug_dummy_end_padding_0[6];}; union __C6 { struct __C5 try_block; struct __C3 function; struct __C4 *throw_spec;}; struct __C7 { struct __C7 *next; unsigned char kind; union __C6 variant;}; struct __type_info { const long *__vptr; const char *__name;}; struct __class_type_info { struct __type_info base;}; struct __si_class_type_info { struct __class_type_info base; const struct __class_type_info *base_type;};
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+union _ZZ10__signbitlEUt_ {
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+long double __l;
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+int __i[3];};
+# 74 "/usr/include/c++/5/bits/stringfwd.h" 3
+typedef struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE _ZNSt7__cxx116stringE;
+# 477 "/usr/include/c++/5/bits/alloc_traits.h" 3
+typedef struct _ZSaIcE _ZNSt16allocator_traitsISaIcEE12rebind_allocIcEE;
+# 169 "/usr/include/c++/5/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIcEE12rebind_allocIcEE _ZN9__gnu_cxx14__alloc_traitsISaIcEE6rebindIcE5otherE;
+# 74 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIcEE6rebindIcE5otherE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_Char_alloc_typeE;
+# 235 "/usr/include/c++/5/bits/char_traits.h" 3
+typedef char _ZNSt11char_traitsIcE9char_typeE;
+# 81 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_Char_alloc_typeE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE14allocator_typeE;
+# 196 "/usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h" 3
+typedef unsigned long _ZSt6size_t;
+# 465 "/usr/include/c++/5/bits/alloc_traits.h" 3
+typedef _ZSt6size_t _ZNSt16allocator_traitsISaIcEE9size_typeE;
+# 106 "/usr/include/c++/5/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIcEE9size_typeE _ZN9__gnu_cxx14__alloc_traitsISaIcEE9size_typeE;
+# 82 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIcEE9size_typeE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9size_typeE;
+# 450 "/usr/include/c++/5/bits/alloc_traits.h" 3
+typedef char *_ZNSt16allocator_traitsISaIcEE7pointerE;
+# 104 "/usr/include/c++/5/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIcEE7pointerE _ZN9__gnu_cxx14__alloc_traitsISaIcEE7pointerE;
+# 86 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIcEE7pointerE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7pointerE;
+# 453 "/usr/include/c++/5/bits/alloc_traits.h" 3
+typedef const char *_ZNSt16allocator_traitsISaIcEE13const_pointerE;
+# 105 "/usr/include/c++/5/ext/alloc_traits.h" 3
+typedef _ZNSt16allocator_traitsISaIcEE13const_pointerE _ZN9__gnu_cxx14__alloc_traitsISaIcEE13const_pointerE;
+# 87 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZN9__gnu_cxx14__alloc_traitsISaIcEE13const_pointerE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13const_pointerE;
+# 88 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef struct _ZN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8iteratorE;
+# 90 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef struct _ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE14const_iteratorE;
+# 106 "/usr/include/c++/5/bits/basic_string.h" 3
+struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderE {
+# 111 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7pointerE _M_p;};
+# 120 "/usr/include/c++/5/bits/basic_string.h" 3
+union __C10 {
+# 121 "/usr/include/c++/5/bits/basic_string.h" 3
+char _M_local_buf[16];
+# 122 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9size_typeE _M_allocated_capacity;};
+# 71 "/usr/include/c++/5/bits/stringfwd.h" 3
+struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE {
+# 114 "/usr/include/c++/5/bits/basic_string.h" 3
+struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderE _M_dataplus;
+# 115 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9size_typeE _M_string_length;
+# 119 "/usr/include/c++/5/bits/basic_string.h" 3
+# 120 "/usr/include/c++/5/bits/basic_string.h" 3
+union  {
+# 121 "/usr/include/c++/5/bits/basic_string.h" 3
+char _M_local_buf[16];
+# 122 "/usr/include/c++/5/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9size_typeE _M_allocated_capacity;};};
+# 191 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+typedef struct _ZSt26random_access_iterator_tag _ZNSt15iterator_traitsIPKcE17iterator_categoryE;
+# 194 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZNSt15iterator_traitsIPKcE17iterator_categoryE _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_construct_auxIPKcEEvT_S8_St12__false_typeE4_Tag;
+# 180 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+typedef struct _ZSt26random_access_iterator_tag _ZNSt15iterator_traitsIPcE17iterator_categoryE;
+# 194 "/usr/include/c++/5/bits/basic_string.h" 3
+typedef _ZNSt15iterator_traitsIPcE17iterator_categoryE _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_construct_auxIPcEEvT_S7_St12__false_typeE4_Tag;
+# 60 "/usr/include/c++/5/exception" 3
+struct _ZSt9exception { const long *__vptr;};
+# 82 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+struct _ZSt11__true_type {char __nv_no_debug_dummy_end_padding_0;};
+# 83 "/usr/include/c++/5/bits/cpp_type_traits.h" 3
+struct _ZSt12__false_type {char __nv_no_debug_dummy_end_padding_0;};
+# 89 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt18input_iterator_tag {char __nv_no_debug_dummy_end_padding_0;};
+# 95 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt20forward_iterator_tag {char __nv_no_debug_dummy_end_padding_0;};
+# 99 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt26bidirectional_iterator_tag {char __nv_no_debug_dummy_end_padding_0;};
+# 103 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt26random_access_iterator_tag {char __nv_no_debug_dummy_end_padding_0;};
+# 233 "/usr/include/c++/5/bits/char_traits.h" 3
+struct _ZSt11char_traitsIcE {char __nv_no_debug_dummy_end_padding_0;};
+# 48 "/usr/include/x86_64-linux-gnu/c++/5/bits/c++allocator.h" 3
+typedef struct _ZN9__gnu_cxx13new_allocatorIcEE _ZSt16__allocator_baseIcE;
+# 64 "/usr/include/c++/5/bits/memoryfwd.h" 3
+struct _ZSaIcE {char __nv_no_debug_dummy_end_padding_0;};
+# 445 "/usr/include/c++/5/bits/alloc_traits.h" 3
+typedef struct _ZSaIcE _ZNSt16allocator_traitsISaIcEE14allocator_typeE;
+# 83 "/usr/include/c++/5/bits/alloc_traits.h" 3
+struct _ZSt16allocator_traitsISaIcEE {char __nv_no_debug_dummy_end_padding_0;};
+# 50 "/usr/include/c++/5/stdexcept" 3
+union __C9 {
+# 51 "/usr/include/c++/5/stdexcept" 3
+const char *_M_p;
+# 52 "/usr/include/c++/5/stdexcept" 3
+char _M_bytes[8];};
+# 48 "/usr/include/c++/5/stdexcept" 3
+struct _ZSt12__cow_string {
+# 50 "/usr/include/c++/5/stdexcept" 3
+# 50 "/usr/include/c++/5/stdexcept" 3
+union  {
+# 51 "/usr/include/c++/5/stdexcept" 3
+const char *_M_p;
+# 52 "/usr/include/c++/5/stdexcept" 3
+char _M_bytes[8];};};
+# 192 "/usr/include/c++/5/stdexcept" 3
+struct _ZSt13runtime_error { struct _ZSt9exception __b_St9exception;
+# 194 "/usr/include/c++/5/stdexcept" 3
+struct _ZSt12__cow_string _M_msg;};
+# 155 "/usr/include/c++/5/bits/ptr_traits.h" 3
+typedef char _ZNSt14pointer_traitsIPcE12element_typeE;
+# 1510 "/usr/include/c++/5/type_traits" 3
+typedef _ZNSt14pointer_traitsIPcE12element_typeE _ZNSt15remove_volatileIcE4typeE;
+# 1509 "/usr/include/c++/5/type_traits" 3
+struct _ZSt15remove_volatileIcE {char __nv_no_debug_dummy_end_padding_0;};
+# 1501 "/usr/include/c++/5/type_traits" 3
+typedef _ZNSt15remove_volatileIcE4typeE _ZNSt12remove_constIcE4typeE;
+# 1500 "/usr/include/c++/5/type_traits" 3
+struct _ZSt12remove_constIcE {char __nv_no_debug_dummy_end_padding_0;};
+# 1521 "/usr/include/c++/5/type_traits" 3
+typedef _ZNSt12remove_constIcE4typeE _ZNSt9remove_cvIcE4typeE;
+# 1518 "/usr/include/c++/5/type_traits" 3
+struct _ZSt9remove_cvIcE {char __nv_no_debug_dummy_end_padding_0;};
+# 107 "/usr/include/c++/5/bits/ptr_traits.h" 3
+typedef _ZNSt14pointer_traitsIPcE12element_typeE _ZNSt16__ptrtr_not_voidIccE6__typeE;
+# 105 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt16__ptrtr_not_voidIccE {char __nv_no_debug_dummy_end_padding_0;};
+# 132 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt14pointer_traitsIPcE {char __nv_no_debug_dummy_end_padding_0;};
+# 162 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt15iterator_traitsIPKcE {char __nv_no_debug_dummy_end_padding_0;};
+# 162 "/usr/include/c++/5/bits/stl_iterator_base_types.h" 3
+struct _ZSt15iterator_traitsIPcE {char __nv_no_debug_dummy_end_padding_0;};
+# 155 "/usr/include/c++/5/bits/ptr_traits.h" 3
+typedef const char _ZNSt14pointer_traitsIPKcE12element_typeE;
+# 1510 "/usr/include/c++/5/type_traits" 3
+typedef _ZNSt14pointer_traitsIPKcE12element_typeE _ZNSt15remove_volatileIKcE4typeE;
+# 1509 "/usr/include/c++/5/type_traits" 3
+struct _ZSt15remove_volatileIKcE {char __nv_no_debug_dummy_end_padding_0;};
+# 1505 "/usr/include/c++/5/type_traits" 3
+typedef char _ZNSt12remove_constIKcE4typeE;
+# 1500 "/usr/include/c++/5/type_traits" 3
+struct _ZSt12remove_constIKcE {char __nv_no_debug_dummy_end_padding_0;};
+# 1521 "/usr/include/c++/5/type_traits" 3
+typedef _ZNSt12remove_constIKcE4typeE _ZNSt9remove_cvIKcE4typeE;
+# 1518 "/usr/include/c++/5/type_traits" 3
+struct _ZSt9remove_cvIKcE {char __nv_no_debug_dummy_end_padding_0;};
+# 107 "/usr/include/c++/5/bits/ptr_traits.h" 3
+typedef _ZNSt14pointer_traitsIPKcE12element_typeE _ZNSt16__ptrtr_not_voidIKccE6__typeE;
+# 105 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt16__ptrtr_not_voidIKccE {char __nv_no_debug_dummy_end_padding_0;};
+# 132 "/usr/include/c++/5/bits/ptr_traits.h" 3
+struct _ZSt14pointer_traitsIPKcE {char __nv_no_debug_dummy_end_padding_0;};
+# 1580 "/usr/include/c++/5/type_traits" 3
+typedef _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE14allocator_typeE _ZNSt16remove_referenceIRSaIcEE4typeE;
+# 1575 "/usr/include/c++/5/type_traits" 3
+struct _ZSt16remove_referenceIRSaIcEE {char __nv_no_debug_dummy_end_padding_0;};
+# 1580 "/usr/include/c++/5/type_traits" 3
+typedef struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE _ZNSt16remove_referenceIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4typeE;
+# 1575 "/usr/include/c++/5/type_traits" 3
+struct _ZSt16remove_referenceIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE {char __nv_no_debug_dummy_end_padding_0;};
+# 61 "/usr/include/c++/5/ext/new_allocator.h" 3
+typedef _ZSt6size_t _ZN9__gnu_cxx13new_allocatorIcE9size_typeE;
+# 58 "/usr/include/c++/5/ext/new_allocator.h" 3
+struct _ZN9__gnu_cxx13new_allocatorIcEE {char __nv_no_debug_dummy_end_padding_0;};
+# 168 "/usr/include/c++/5/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIcEE6rebindIcEE {char __nv_no_debug_dummy_end_padding_0;};
+# 95 "/usr/include/c++/5/ext/alloc_traits.h" 3
+struct _ZN9__gnu_cxx14__alloc_traitsISaIcEEE {char __nv_no_debug_dummy_end_padding_0;};
+# 721 "/usr/include/c++/5/bits/stl_iterator.h" 3
+struct _ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE {
+# 724 "/usr/include/c++/5/bits/stl_iterator.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13const_pointerE _M_current;};
+# 80 "/home/zhengzhen/workspace/versapipe/tools/utils.h"
+struct _ZN5Tools9CudaErrorE { struct _ZSt13runtime_error __b_St13runtime_error;};
+# 224 "/usr/local/cuda-8.0/include/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void _ZdlPv(void *);
+# 113 "/usr/local/cuda-8.0/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) const char *cudaGetErrorString(enum cudaError);
+# 126 "/usr/local/cuda-8.0/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaFree(void *);
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+# 127 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+ __device_builtin__ ___device__(extern  __no_sc__) __inline__ __attribute__((__always_inline__)) __attribute__((__gnu_inline__)) __attribute__((__nothrow__)) __attribute__((__const__)) int __signbitf(float);
+#endif
+#if !defined(__CUDABE__)
+# 139 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+ __device_builtin__ ___device__(extern  __no_sc__) __inline__ __attribute__((__always_inline__)) __attribute__((__gnu_inline__)) __attribute__((__nothrow__)) __attribute__((__const__)) int __signbit(double);
+#endif
+#if !defined(__CUDABE__)
+# 151 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+ __device_builtin__ ___device__(extern  __no_sc__) __inline__ __attribute__((__always_inline__)) __attribute__((__gnu_inline__)) __attribute__((__nothrow__)) __attribute__((__const__)) int __signbitl(long double);
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+extern  __device__ const long _ZTVN5Tools9CudaErrorE[5];
+static  __device__ const char __T20[6];
+# 7 "/home/zhengzhen/workspace/versapipe/segmentedStorage.cu"
+extern  __device__ void *storage;
+extern  __device__ const long _ZTVN10__cxxabiv117__class_type_infoE[];
+extern  __device__ const long _ZTVN10__cxxabiv120__si_class_type_infoE[];
+# 43 "/home/zhengzhen/workspace/versapipe/segmentedStorage.cuh"
+extern  __device__ void *_ZN16SegmentedStorage7storageE;
+#include "common_functions.h"
+ __attribute__((nv_weak_odr))  __device__ const long _ZTVN5Tools9CudaErrorE[5] = {0L,0L,0L,0L,0L};
+static  __device__ const char __T20[6] = "store";
+# 7 "/home/zhengzhen/workspace/versapipe/segmentedStorage.cu"
+ __device__ void *storage = ((void *)0LL);
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif

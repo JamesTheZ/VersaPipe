@@ -1,0 +1,3 @@
+/home/zhengzhen/workspace/versapipe/examples/rasterization/build/CMakeFiles/edit_cache.dir
+/home/zhengzhen/workspace/versapipe/examples/rasterization/build/CMakeFiles/rebuild_cache.dir
+/home/zhengzhen/workspace/versapipe/examples/rasterization/build/CMakeFiles/loop.dir
