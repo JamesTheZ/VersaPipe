@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/zhengzhen/workspace/versapipe/examples/reyes/assimp/lib
+export LIBRARY_PATH=${LIBRARY_PATH}:/home/zhengzhen/workspace/versapipe/examples/reyes/assimp/lib

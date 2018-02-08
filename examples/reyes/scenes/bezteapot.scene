@@ -1,0 +1,25 @@
+# camera
+camera [ 0.0 0.0 3.0 ]  # eye
+       [ 0.0 0.0 0.0 ]  # lookat
+       [ 0.0 1.0 0.0 ]  # up
+       [  0.075 2.0  2.9 ]  # [ aperture focal-length focal-plane ]
+
+
+# lights [ pos ] [ diff ] [ spec ] n
+light [  0.0 10.0   5.0 ] [  0.7  0.7  0.7 ] [  0.7  0.7  0.7 ] 5.0 
+light [ 10.0  0.0 -15.0 ] [  0.7  0.7  0.7 ] [  0.7  0.7  0.7 ] 5.0 
+light [ 10.0  0.0  15.0 ] [  0.7  0.7  0.7 ] [  0.7  0.7  0.7 ] 5.0 
+
+
+# geometry
+
+
+# material [ amb ] [ diffuse ] [ spec ] n
+material [ 0.2 0.2 0.2 ] [ 0.7 0.1 0.2 ] [ 0.7 0.7 0.7 ] 100.0
+
+    # first teapot
+    translate [ 0.0 -0.5 1.0 ]
+    rotate    [ 1.0 0.0 0.0 ] -90.0
+    scale     [ 1.0 1.0 1.0 ]
+    loadbez tpt.dat 1.0
+    reset

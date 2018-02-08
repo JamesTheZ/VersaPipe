@@ -1,0 +1,28 @@
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 196 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
+___device__(extern  __no_sc__) __attribute__((__used__)) void *malloc(size_t __T10);
+# 197 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
+___device__(extern  __no_sc__) __attribute__((__used__)) void free(void *__T11);
+# 15 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ void *queuePointers[64];
+# 19 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel11doneCounterE[64];
+# 20 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel10endCounterE[64];
+# 22 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ int _ZN10Megakernel19maxConcurrentBlocksE[64];
+# 23 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel26maxConcurrentBlockEvalDoneE[64];
+# 25 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ volatile int _ZN10Megakernel7sm_flagE[3200];
+# 28 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ int _ZN10Megakernel11block_countE[3200];
+# 30 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ int _ZN10Megakernel15group_done_flagE[64];
+# 34 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ int *_ZN10Megakernel18procIdArray_globalE;
+# 37 "/home/zhengzhen/workspace/versapipe/techniqueMegakernel.cu"
+ __device__  __var_used__ int _ZN10Megakernel13resultCounterE[64];
+#include "common_functions.h"

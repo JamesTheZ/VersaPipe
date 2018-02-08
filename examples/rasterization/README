@@ -1,7 +1,0 @@
-GPU instruction:
-  To build the rasterizer pipeline, run 'make' in this directory.
-  To run the rasterizer pipeline, run 'bin/pikoraster'
-
-CPU instruction:
-  To build the rasterizer pipeline, run 'make cpu' in this directory.
-  To run the rasterizer pipeline, run 'bin/pikoraster-cpu'
