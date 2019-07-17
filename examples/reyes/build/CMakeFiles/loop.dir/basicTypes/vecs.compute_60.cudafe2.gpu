@@ -1,8 +1,0 @@
-# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3
-typedef unsigned long size_t;
-#include "crt/device_runtime.h"
-# 196 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
-___device__(extern  __no_sc__) __attribute__((__used__)) void *malloc(size_t __T10);
-# 197 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
-___device__(extern  __no_sc__) __attribute__((__used__)) void free(void *__T11);
-#include "common_functions.h"

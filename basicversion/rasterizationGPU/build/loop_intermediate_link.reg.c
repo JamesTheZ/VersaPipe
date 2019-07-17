@@ -1,0 +1,5 @@
+#define NUM_PRELINKED_OBJECTS 4
+DEFINE_REGISTER_FUNC(_23_main_compute_60_cpp1_ii_7ed080b1)
+DEFINE_REGISTER_FUNC(_30_sceneParser_compute_60_cpp1_ii_84694a44)
+DEFINE_REGISTER_FUNC(_26_bezmesh_compute_60_cpp1_ii_4924c2dd)
+DEFINE_REGISTER_FUNC(_23_vecs_compute_60_cpp1_ii_69329e6a)

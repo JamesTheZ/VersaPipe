@@ -1,0 +1,7 @@
+GPU instructions:
+  To build the reyes pipeline, run 'make' in this directory.
+  To run the reyes pipeline, run 'bin/reyes'
+
+CPU instructions:
+  To build the reyes pipeline, run 'make cpu' in this directory.
+  To run the reyes pipeline, run 'bin/reyes-cpu'

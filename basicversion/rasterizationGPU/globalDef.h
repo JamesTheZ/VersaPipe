@@ -1,0 +1,5 @@
+#pragma once
+
+#define VS_BINSIZE 32
+#define RASTER_BINSIZE_LG2 3
+#define RASTER_BINSIZE (1 << RASTER_BINSIZE_LG2)

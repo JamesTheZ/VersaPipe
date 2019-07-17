@@ -1,0 +1,1240 @@
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+struct cvec3f;
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+struct cvec2i;
+# 9 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct cvec2u;
+# 20 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct ConstantState;
+# 35 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct MutableState;
+# 42 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct Primitive;
+# 52 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct Pixel;
+# 8 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct raster_wtri;
+# 36 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct raster_stri;
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct boundingBoxFixPt;
+# 1 "main.compute_60.cudafe1.gpu"
+typedef char __nv_bool;
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+struct cvec3f {
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+float x;
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+float y;
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+float z;};
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+struct cvec2i {
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+int x;
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+int y;};
+# 9 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct cvec2u {
+# 10 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+unsigned x;
+# 10 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+unsigned y;};
+# 20 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct ConstantState {
+# 22 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+int screenSizeX;
+# 23 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+int screenSizeY;
+# 24 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+float halfW;
+# 24 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+float halfH;
+# 27 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+float projMatrix[16];
+# 28 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+float viewMatrix[16];
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+float viewProjMatrix[16];
+# 30 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+int debX;
+# 30 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+int debY;};
+# 35 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct MutableState {
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+float zBuffer[786432];};
+# 42 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct Primitive {
+# 48 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+unsigned binID;};
+# 52 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct Pixel {
+# 52 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct Primitive __b_9Primitive;
+# 56 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct cvec2u pos;
+# 61 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+unsigned color;};
+# 8 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct raster_wtri {
+# 8 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct Primitive __b_9Primitive;
+# 10 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int id;
+# 11 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct cvec3f worldPos0;
+# 11 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct cvec3f worldPos1;
+# 11 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct cvec3f worldPos2;
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+unsigned icol0;
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+unsigned icol1;
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+unsigned icol2;
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+char __nv_no_debug_dummy_end_padding_0[8];} __align__(16) ;
+# 36 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct raster_stri {
+# 36 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct Primitive __b_9Primitive;
+# 39 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int xmin;
+# 39 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int ymin;
+# 43 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int x0;
+# 43 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int x1;
+# 43 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int x2;
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int y0;
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int y1;
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+int y2;
+# 45 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+float z0;
+# 45 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+float z1;
+# 45 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+float z2;
+# 48 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+unsigned icol0;
+# 48 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+unsigned icol1;
+# 48 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+unsigned icol2;
+# 48 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+char __nv_no_debug_dummy_end_padding_0[4];} __align__(16) ;
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct boundingBoxFixPt {
+# 85 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct cvec2i hi;
+# 85 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/basicTypes/rasterTypes.h"
+struct cvec2i lo;};
+# 196 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__used__)) __attribute__((__malloc__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void *malloc(size_t __T10);
+# 197 "/usr/local/cuda-8.0/include/crt/device_runtime.h" 3
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__used__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void free(void *__T11);
+#if !defined(__CUDABE__)
+# 78 "/usr/include/x86_64-linux-gnu/bits/string3.h" 3
+ __device_builtin__ ___device__(extern  __no_sc__) __inline__ __attribute__((__artificial__)) __attribute__((__always_inline__)) __attribute__((__gnu_inline__)) __attribute__((__nothrow__)) void *memset(void *__T12, int __T13, size_t __T14);
+#endif
+#if !defined(__CUDABE__)
+# 261 "/usr/local/cuda-8.0/include/math_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int min(int __T15, int __T16);
+#endif
+#if !defined(__CUDABE__)
+# 313 "/usr/local/cuda-8.0/include/math_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int max(int __T17, int __T18);
+#endif
+#if !defined(__CUDABE__)
+# 149 "/usr/local/cuda-8.0/include/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __float_as_int(float __T19);
+#endif
+#if !defined(__CUDABE__)
+# 2177 "/usr/local/cuda-8.0/include/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __ffsll(long long __T110);
+#endif
+#if !defined(__CUDABE__)
+# 2188 "/usr/local/cuda-8.0/include/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __popcll(unsigned long long __T111);
+#endif
+#if !defined(__CUDABE__)
+# 81 "/usr/local/cuda-8.0/include/device_atomic_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __iAtomicAdd(int *__T112, int __T113);
+#endif
+#if !defined(__CUDABE__)
+# 86 "/usr/local/cuda-8.0/include/device_atomic_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __iAtomicMin(int *__T114, int __T115);
+#endif
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+___device__(extern  __no_sc__) __inline__ struct cvec3f _Z9gencvec3fRKfS0_S0_(const float *__T116, const float *__T117, const float *__T118);
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+___device__(extern  __no_sc__) __inline__ __nv_bool _Z23isBBBetweenSamples_cudaR16boundingBoxFixPt(struct boundingBoxFixPt *__T119);
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+___device__(extern  __no_sc__) __inline__ float _Z21interpolate_alphabetaIfET_RKS0_S2_S2_RKfS4_(const float *__T120, const float *__T121, const float *__T122, const float *__T123, const float *__T124);
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__global__ __var_used__ extern void _Z12vertex_stageP11raster_wtriP11raster_striPii(struct raster_wtri *__T125, struct raster_stri *__T126, int *__T127, int __T128);
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__global__ __var_used__ extern void _Z12middle_stageP11raster_striS0_Pii(struct raster_stri *__T129, struct raster_stri *__T130, int *__T131, int __T132);
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__global__ __var_used__ extern void _Z12raster_stageP11raster_striP5PixelPii(struct raster_stri *__T133, struct Pixel *__T134, int *__T135, int __T136);
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+___device__(extern  __no_sc__) __inline__ struct cvec2u *_ZN6cvec2uaSERS_(struct cvec2u *const __T137, struct cvec2u *__T138);
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+___device__(extern  __no_sc__) __inline__ void _ZN17VertexShaderStage13middleProcessE11raster_striPS0_Pi(struct raster_stri __T139, struct raster_stri *__T140, int *__T141);
+# 210 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+___device__(extern  __no_sc__) __inline__ void _ZN17VertexShaderStage11process_newE11raster_wtriP11raster_striPi(struct raster_wtri __T142, struct raster_stri *__T143, int *__T144);
+# 54 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+___device__(extern  __no_sc__) __inline__ void _ZN11RasterStage11process_newE11raster_striP5PixelPi(struct raster_stri __T145, struct Pixel *__T146, int *__T147);
+# 24 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+ __constant__  __var_used__ struct ConstantState constState_d;
+# 25 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+ __device__  __var_used__ struct MutableState mutableState_d;
+# 26 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+extern  __device__  __var_used__ const long _ZTVSt9basic_iosIcSt11char_traitsIcEE[4];
+# 27 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+extern  __device__  __var_used__ const long *const _ZTTSi[];
+# 28 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+extern  __device__  __var_used__ const long _ZTVSt15basic_streambufIcSt11char_traitsIcEE[16];
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+extern  __device__  __var_used__ const long _ZTVSt13basic_filebufIcSt11char_traitsIcEE[16];
+# 30 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/stage.h"
+extern  __device__  __var_used__ const long *const _ZTTSt14basic_ifstreamIcSt11char_traitsIcEE[];
+#include "common_functions.h"
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ struct cvec3f _Z9gencvec3fRKfS0_S0_(
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+const float *x, 
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+const float *y, 
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+const float *z){
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+{
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+{
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+ struct cvec3f __cuda_local_var_44757_128_non_const_v;
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+(__cuda_local_var_44757_128_non_const_v.x) = (*x);
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+(__cuda_local_var_44757_128_non_const_v.y) = (*y);
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+(__cuda_local_var_44757_128_non_const_v.z) = (*z);
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+return __cuda_local_var_44757_128_non_const_v;
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+}
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/cvec.h"
+}}
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ __nv_bool _Z23isBBBetweenSamples_cudaR16boundingBoxFixPt(
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+struct boundingBoxFixPt *bb){
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+{
+# 124 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+{
+# 129 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+{
+# 130 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+ __nv_bool __cuda_local_var_115652_8_non_const_bCullXaxis;
+# 131 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+ __nv_bool __cuda_local_var_115653_8_non_const_bCullYaxis;
+# 130 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__cuda_local_var_115652_8_non_const_bCullXaxis = ((__nv_bool)(((((bb->lo).x) - 8) >> 4) == ((((bb->hi).x) - 8) >> 4)));
+# 131 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__cuda_local_var_115653_8_non_const_bCullYaxis = ((__nv_bool)(((((bb->lo).y) - 8) >> 4) == ((((bb->hi).y) - 8) >> 4)));
+# 132 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+return (__nv_bool)((__cuda_local_var_115652_8_non_const_bCullXaxis) || (__cuda_local_var_115653_8_non_const_bCullYaxis));
+# 133 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+}
+# 135 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+}
+# 135 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+}}
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ float _Z21interpolate_alphabetaIfET_RKS0_S2_S2_RKfS4_(
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+const float *f0mf2, 
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+const float *f1mf2, 
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+const float *f2, 
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+const float *alpha, 
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+const float *beta){
+# 41 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 42 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 43 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+return ((*f2) + ((*alpha) * (*f0mf2))) + ((*beta) * (*f1mf2));
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}}
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__global__ __var_used__ void _Z12vertex_stageP11raster_wtriP11raster_striPii(
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+struct raster_wtri *prim, 
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+struct raster_stri *middles, 
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+int *index, 
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+int numPrims){
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 74 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 76 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+ int __cuda_local_var_122338_6_non_const_gid;
+# 76 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__cuda_local_var_122338_6_non_const_gid = ((int)(((blockDim.x) * (blockIdx.x)) + (threadIdx.x))); {
+# 77 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+if (__cuda_local_var_122338_6_non_const_gid < numPrims)
+# 78 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 79 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+_ZN17VertexShaderStage11process_newE11raster_wtriP11raster_striPi((prim[__cuda_local_var_122338_6_non_const_gid]), middles, index);
+# 80 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+} }
+# 81 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+} 
+# 81 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+}}
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__global__ __var_used__ void _Z12middle_stageP11raster_striS0_Pii(
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+struct raster_stri *middles, 
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+struct raster_stri *nextPrims, 
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+int *index, 
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+int numPrims){
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 86 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+ int __cuda_local_var_122348_6_non_const_gid;
+# 86 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__cuda_local_var_122348_6_non_const_gid = ((int)(((blockDim.x) * (blockIdx.x)) + (threadIdx.x))); {
+# 87 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+if (__cuda_local_var_122348_6_non_const_gid < numPrims)
+# 88 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 89 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+_ZN17VertexShaderStage13middleProcessE11raster_striPS0_Pi((middles[__cuda_local_var_122348_6_non_const_gid]), nextPrims, index);
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+} }
+# 91 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+} 
+# 91 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+}}
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__global__ __var_used__ void _Z12raster_stageP11raster_striP5PixelPii(
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+struct raster_stri *prim, 
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+struct Pixel *pixels, 
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+int *index, 
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+int numPrims){
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 94 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 116 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+ int __cuda_local_var_122358_6_non_const_gid;
+# 116 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+__cuda_local_var_122358_6_non_const_gid = ((int)(((blockDim.x) * (blockIdx.x)) + (threadIdx.x))); {
+# 117 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+if (__cuda_local_var_122358_6_non_const_gid < numPrims)
+# 118 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+{
+# 119 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+_ZN11RasterStage11process_newE11raster_striP5PixelPi((prim[__cuda_local_var_122358_6_non_const_gid]), pixels, index);
+# 120 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+} }
+# 121 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+} 
+# 121 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/__pikoCompiledPipe.h"
+}}
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ struct cvec2u *_ZN6cvec2uaSERS_(
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct cvec2u *const this, 
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+struct cvec2u *t){
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+{
+# 13 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+{
+# 14 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+(this->x) = (t->x);
+# 15 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+(this->y) = (t->y);
+# 16 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+return this;
+# 17 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+}
+# 17 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+}}
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN17VertexShaderStage13middleProcessE11raster_striPS0_Pi(
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+struct raster_stri p, 
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+struct raster_stri *prims, 
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+int *index){
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 29 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T20;
+# 30 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T21;
+# 31 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T22;
+# 32 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T23;
+# 30 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ struct boundingBoxFixPt __cuda_local_var_115781_21_non_const_bb;
+# 33 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115784_8_non_const_binSize;
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115785_8_non_const_binsizebits;
+# 35 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115786_8_non_const_bx1;
+# 36 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115787_8_non_const_bx2;
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115788_8_non_const_by1;
+# 38 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115789_8_non_const_by2;
+# 43 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115794_8_non_const_nBx;
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115795_8_non_const_nBy;
+# 31 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 103 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115781_21_non_const_bb.lo).x) = ((__T20 = (min((min((p.x0), (p.x1))), (p.x2)))) , ((int)(((unsigned)__T20) & 4294967040U)));
+# 104 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115781_21_non_const_bb.lo).y) = ((__T21 = (min((min((p.y0), (p.y1))), (p.y2)))) , ((int)(((unsigned)__T21) & 4294967040U)));
+# 105 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115781_21_non_const_bb.hi).x) = ((__T22 = (max((max((p.x0), (p.x1))), (p.x2)))) , ((int)(((unsigned)(__T22 + 255)) & 4294967040U)));
+# 106 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115781_21_non_const_bb.hi).y) = ((__T23 = (max((max((p.y0), (p.y1))), (p.y2)))) , ((int)(((unsigned)(__T23 + 255)) & 4294967040U)));
+# 31 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+}
+# 33 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115784_8_non_const_binSize = 8;
+# 34 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115785_8_non_const_binsizebits = 7;
+# 35 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115786_8_non_const_bx1 = (((__cuda_local_var_115781_21_non_const_bb.lo).x) >> __cuda_local_var_115785_8_non_const_binsizebits);
+# 36 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115787_8_non_const_bx2 = (((__cuda_local_var_115781_21_non_const_bb.hi).x) >> __cuda_local_var_115785_8_non_const_binsizebits);
+# 37 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115788_8_non_const_by1 = (((__cuda_local_var_115781_21_non_const_bb.lo).y) >> __cuda_local_var_115785_8_non_const_binsizebits);
+# 38 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115789_8_non_const_by2 = (((__cuda_local_var_115781_21_non_const_bb.hi).y) >> __cuda_local_var_115785_8_non_const_binsizebits);
+# 43 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115794_8_non_const_nBx = ((constState_d.screenSizeX) / __cuda_local_var_115784_8_non_const_binSize);
+# 44 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115795_8_non_const_nBy = ((constState_d.screenSizeY) / __cuda_local_var_115784_8_non_const_binSize);
+# 50 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115786_8_non_const_bx1 = (max(0, __cuda_local_var_115786_8_non_const_bx1));
+# 51 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115788_8_non_const_by1 = (max(0, __cuda_local_var_115788_8_non_const_by1));
+# 52 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115787_8_non_const_bx2 = (min(__cuda_local_var_115787_8_non_const_bx2, (__cuda_local_var_115794_8_non_const_nBx - 1)));
+# 53 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115789_8_non_const_by2 = (min(__cuda_local_var_115789_8_non_const_by2, (__cuda_local_var_115795_8_non_const_nBy - 1)));
+# 55 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 55 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T24;
+# 56 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T25;
+# 57 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T26;
+# 56 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115807_9_non_const_x1mx0;
+# 57 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115808_9_non_const_x2mx1;
+# 58 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115809_9_non_const_x0mx2;
+# 59 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115810_9_non_const_y1my0;
+# 60 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115811_9_non_const_y2my1;
+# 61 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115812_9_non_const_y0my2;
+# 63 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115814_9_non_const_startx;
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115815_9_non_const_starty;
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115817_9_non_const_step0x;
+# 67 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115818_9_non_const_step1x;
+# 68 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115819_9_non_const_step2x;
+# 70 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115821_9_non_const_step0y;
+# 71 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115822_9_non_const_step1y;
+# 72 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115823_9_non_const_step2y;
+# 74 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115825_9_non_const_TRoffset0;
+# 75 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115826_9_non_const_TRoffset1;
+# 76 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115827_9_non_const_TRoffset2;
+# 78 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115829_9_non_const_rowsume0;
+# 79 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115830_9_non_const_rowsume1;
+# 80 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115831_9_non_const_rowsume2;
+# 82 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ struct raster_stri __cuda_local_var_115833_17_non_const_newP;
+# 56 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115807_9_non_const_x1mx0 = ((p.x1) - (p.x0));
+# 57 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115808_9_non_const_x2mx1 = ((p.x2) - (p.x1));
+# 58 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115809_9_non_const_x0mx2 = ((p.x0) - (p.x2));
+# 59 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115810_9_non_const_y1my0 = ((p.y1) - (p.y0));
+# 60 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115811_9_non_const_y2my1 = ((p.y2) - (p.y1));
+# 61 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115812_9_non_const_y0my2 = ((p.y0) - (p.y2));
+# 63 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115814_9_non_const_startx = (__cuda_local_var_115786_8_non_const_bx1 << __cuda_local_var_115785_8_non_const_binsizebits);
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115815_9_non_const_starty = (__cuda_local_var_115788_8_non_const_by1 << __cuda_local_var_115785_8_non_const_binsizebits);
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115817_9_non_const_step0x = (-(__cuda_local_var_115810_9_non_const_y1my0 << __cuda_local_var_115785_8_non_const_binsizebits));
+# 67 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115818_9_non_const_step1x = (-(__cuda_local_var_115811_9_non_const_y2my1 << __cuda_local_var_115785_8_non_const_binsizebits));
+# 68 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115819_9_non_const_step2x = (-(__cuda_local_var_115812_9_non_const_y0my2 << __cuda_local_var_115785_8_non_const_binsizebits));
+# 70 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115821_9_non_const_step0y = (__cuda_local_var_115807_9_non_const_x1mx0 << __cuda_local_var_115785_8_non_const_binsizebits);
+# 71 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115822_9_non_const_step1y = (__cuda_local_var_115808_9_non_const_x2mx1 << __cuda_local_var_115785_8_non_const_binsizebits);
+# 72 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115823_9_non_const_step2y = (__cuda_local_var_115809_9_non_const_x0mx2 << __cuda_local_var_115785_8_non_const_binsizebits);
+# 74 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115825_9_non_const_TRoffset0 = ((((__T24 = 0) , ((void)(__T24 += ((__cuda_local_var_115810_9_non_const_y1my0 < 0) ? __cuda_local_var_115817_9_non_const_step0x : 0)))) , ((void)(__T24 += ((__cuda_local_var_115807_9_non_const_x1mx0 >= 0) ? __cuda_local_var_115821_9_non_const_step0y : 0)))) , __T24);
+# 75 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115826_9_non_const_TRoffset1 = ((((__T25 = 0) , ((void)(__T25 += ((__cuda_local_var_115811_9_non_const_y2my1 < 0) ? __cuda_local_var_115818_9_non_const_step1x : 0)))) , ((void)(__T25 += ((__cuda_local_var_115808_9_non_const_x2mx1 >= 0) ? __cuda_local_var_115822_9_non_const_step1y : 0)))) , __T25);
+# 76 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115827_9_non_const_TRoffset2 = ((((__T26 = 0) , ((void)(__T26 += ((__cuda_local_var_115812_9_non_const_y0my2 < 0) ? __cuda_local_var_115819_9_non_const_step2x : 0)))) , ((void)(__T26 += ((__cuda_local_var_115809_9_non_const_x0mx2 >= 0) ? __cuda_local_var_115823_9_non_const_step2y : 0)))) , __T26);
+# 78 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115829_9_non_const_rowsume0 = ((__cuda_local_var_115825_9_non_const_TRoffset0 + ((__cuda_local_var_115815_9_non_const_starty - (p.y0)) * __cuda_local_var_115807_9_non_const_x1mx0)) - ((__cuda_local_var_115814_9_non_const_startx - (p.x0)) * __cuda_local_var_115810_9_non_const_y1my0));
+# 79 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115830_9_non_const_rowsume1 = ((__cuda_local_var_115826_9_non_const_TRoffset1 + ((__cuda_local_var_115815_9_non_const_starty - (p.y1)) * __cuda_local_var_115808_9_non_const_x2mx1)) - ((__cuda_local_var_115814_9_non_const_startx - (p.x1)) * __cuda_local_var_115811_9_non_const_y2my1));
+# 80 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115831_9_non_const_rowsume2 = ((__cuda_local_var_115827_9_non_const_TRoffset2 + ((__cuda_local_var_115815_9_non_const_starty - (p.y2)) * __cuda_local_var_115809_9_non_const_x0mx2)) - ((__cuda_local_var_115814_9_non_const_startx - (p.x2)) * __cuda_local_var_115812_9_non_const_y0my2));
+# 80 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int by;
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+by = __cuda_local_var_115788_8_non_const_by1; {
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+for (; (by <= __cuda_local_var_115789_8_non_const_by2); by += 1)
+# 84 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 86 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115837_10_non_const_trivialRe0;
+# 87 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115838_10_non_const_trivialRe1;
+# 88 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __cuda_local_var_115839_10_non_const_trivialRe2;
+# 86 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115837_10_non_const_trivialRe0 = __cuda_local_var_115829_9_non_const_rowsume0;
+# 87 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115838_10_non_const_trivialRe1 = __cuda_local_var_115830_9_non_const_rowsume1;
+# 88 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115839_10_non_const_trivialRe2 = __cuda_local_var_115831_9_non_const_rowsume2;
+# 88 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 88 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ struct raster_stri *__T27;
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int bx;
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+bx = __cuda_local_var_115786_8_non_const_bx1; {
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+for (; (bx <= __cuda_local_var_115787_8_non_const_bx2); bx += 1)
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{ {
+# 92 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+if (((__cuda_local_var_115837_10_non_const_trivialRe0 | __cuda_local_var_115838_10_non_const_trivialRe1) | __cuda_local_var_115839_10_non_const_trivialRe2) >= 0)
+# 93 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 94 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(((((((((((((((__cuda_local_var_115833_17_non_const_newP.__b_9Primitive).binID) = ((p.__b_9Primitive).binID)) , ((void)((__cuda_local_var_115833_17_non_const_newP.icol0) = (p.icol0)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.icol1) = (p.icol1)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.icol2) = (p.icol2)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.x0) = (p.x0)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.y0) = (p.y0)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.z0) = (p.z0)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.x1) = (p.x1)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.y1) = (p.y1)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.z1) = (p.z1)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.x2) = (p.x2)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.y2) = (p.y2)))) , ((void)((__cuda_local_var_115833_17_non_const_newP.z2) = (p.z2)))) , ((void)(&__cuda_local_var_115833_17_non_const_newP));
+# 97 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+((__cuda_local_var_115833_17_non_const_newP.__b_9Primitive).binID) = ((unsigned)((by * __cuda_local_var_115794_8_non_const_nBx) + bx));
+# 100 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__T27 = (prims + (__iAtomicAdd(index, 1)))) , ((void)((((((((((((((((__T27->__b_9Primitive).binID) = ((__cuda_local_var_115833_17_non_const_newP.__b_9Primitive).binID)) , ((void)((__T27->icol0) = (__cuda_local_var_115833_17_non_const_newP.icol0)))) , ((void)((__T27->icol1) = (__cuda_local_var_115833_17_non_const_newP.icol1)))) , ((void)((__T27->icol2) = (__cuda_local_var_115833_17_non_const_newP.icol2)))) , ((void)((__T27->x0) = (__cuda_local_var_115833_17_non_const_newP.x0)))) , ((void)((__T27->y0) = (__cuda_local_var_115833_17_non_const_newP.y0)))) , ((void)((__T27->z0) = (__cuda_local_var_115833_17_non_const_newP.z0)))) , ((void)((__T27->x1) = (__cuda_local_var_115833_17_non_const_newP.x1)))) , ((void)((__T27->y1) = (__cuda_local_var_115833_17_non_const_newP.y1)))) , ((void)((__T27->z1) = (__cuda_local_var_115833_17_non_const_newP.z1)))) , ((void)((__T27->x2) = (__cuda_local_var_115833_17_non_const_newP.x2)))) , ((void)((__T27->y2) = (__cuda_local_var_115833_17_non_const_newP.y2)))) , ((void)((__T27->z2) = (__cuda_local_var_115833_17_non_const_newP.z2)))) , __T27));
+# 103 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} }
+# 105 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115837_10_non_const_trivialRe0 += __cuda_local_var_115817_9_non_const_step0x;
+# 106 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115838_10_non_const_trivialRe1 += __cuda_local_var_115818_9_non_const_step1x;
+# 107 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115839_10_non_const_trivialRe2 += __cuda_local_var_115819_9_non_const_step2x;
+# 108 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} }
+# 108 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+}
+# 109 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115829_9_non_const_rowsume0 += __cuda_local_var_115821_9_non_const_step0y;
+# 110 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115830_9_non_const_rowsume1 += __cuda_local_var_115822_9_non_const_step1y;
+# 111 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115831_9_non_const_rowsume2 += __cuda_local_var_115823_9_non_const_step2y;
+# 112 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} }
+# 112 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+}
+# 113 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+}
+# 115 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} 
+# 115 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+}}
+# 210 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN17VertexShaderStage11process_newE11raster_wtriP11raster_striPi(
+# 210 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+struct raster_wtri p, 
+# 210 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+struct raster_stri *middles, 
+# 210 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+int *index){
+# 210 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 211 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 211 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T28;
+# 212 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T29;
+# 213 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ int __T210;
+# 212 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ float __cuda_local_var_115870_10_non_const_W;
+# 213 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ float __cuda_local_var_115871_10_non_const_H;
+# 215 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ struct raster_stri __cuda_local_var_115873_16_non_const_ps;
+# 212 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115870_10_non_const_W = ((float)(constState_d.screenSizeX));
+# 213 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+__cuda_local_var_115871_10_non_const_H = ((float)(constState_d.screenSizeY));
+# 220 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.x0) = ((int)(__float2int_rz(((double)((float)(((p.worldPos0).x) * (16.0F)))))));
+# 221 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.y0) = ((int)(__float2int_rz(((double)((float)(((p.worldPos0).y) * (16.0F)))))));
+# 222 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.z0) = ((p.worldPos0).z);
+# 223 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.x1) = ((int)(__float2int_rz(((double)((float)(((p.worldPos1).x) * (16.0F)))))));
+# 224 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.y1) = ((int)(__float2int_rz(((double)((float)(((p.worldPos1).y) * (16.0F)))))));
+# 225 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.z1) = ((p.worldPos1).z);
+# 226 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.x2) = ((int)(__float2int_rz(((double)((float)(((p.worldPos2).x) * (16.0F)))))));
+# 227 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.y2) = ((int)(__float2int_rz(((double)((float)(((p.worldPos2).y) * (16.0F)))))));
+# 228 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.z2) = ((p.worldPos2).z);
+# 229 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.icol0) = (p.icol0);
+# 230 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.icol1) = (p.icol1);
+# 231 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__cuda_local_var_115873_16_non_const_ps.icol2) = (p.icol2); {
+# 259 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+if (((__nv_bool)(((((__cuda_local_var_115873_16_non_const_ps.y2) - (__cuda_local_var_115873_16_non_const_ps.y0)) * ((__cuda_local_var_115873_16_non_const_ps.x1) - (__cuda_local_var_115873_16_non_const_ps.x0))) - (((__cuda_local_var_115873_16_non_const_ps.x2) - (__cuda_local_var_115873_16_non_const_ps.x0)) * ((__cuda_local_var_115873_16_non_const_ps.y1) - (__cuda_local_var_115873_16_non_const_ps.y0)))) > 0)) && (((__T28 = ((int)(__float2int_rz(((double)((float)(__cuda_local_var_115870_10_non_const_W * (16.0F)))))))) , ((void)(__T29 = ((int)(__float2int_rz(((double)((float)(__cuda_local_var_115871_10_non_const_H * (16.0F)))))))))) , ((__T210 = 3600) , ((__nv_bool)(!((((((((__cuda_local_var_115873_16_non_const_ps.x0) < (-__T210)) || ((__cuda_local_var_115873_16_non_const_ps.x0) >= (__T28 + __T210))) || (((__cuda_local_var_115873_16_non_const_ps.y0) < (-__T210)) || ((__cuda_local_var_115873_16_non_const_ps.y0) >= (__T29 + __T210)))) || (((__cuda_local_var_115873_16_non_const_ps.x1) < (-__T210)) || ((__cuda_local_var_115873_16_non_const_ps.x1) >= (__T28 + __T210)))) || (((__cuda_local_var_115873_16_non_const_ps.y1) < (-__T210)) || ((__cuda_local_var_115873_16_non_const_ps.y1) >= (__T29 + __T210)))) || (((__cuda_local_var_115873_16_non_const_ps.x2) < (-__T210)) || ((__cuda_local_var_115873_16_non_const_ps.x2) >= (__T28 + __T210)))) || (((__cuda_local_var_115873_16_non_const_ps.y2) < (-__T210)) || ((__cuda_local_var_115873_16_non_const_ps.y2) >= (__T29 + __T210)))))))))
+# 260 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 260 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ struct raster_stri *__T211;
+# 261 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+ struct boundingBoxFixPt __cuda_local_var_115893_22_non_const_bb;
+# 262 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 89 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115893_22_non_const_bb.lo).x) = (min((min((__cuda_local_var_115873_16_non_const_ps.x0), (__cuda_local_var_115873_16_non_const_ps.x1))), (__cuda_local_var_115873_16_non_const_ps.x2)));
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115893_22_non_const_bb.lo).y) = (min((min((__cuda_local_var_115873_16_non_const_ps.y0), (__cuda_local_var_115873_16_non_const_ps.y1))), (__cuda_local_var_115873_16_non_const_ps.y2)));
+# 91 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115893_22_non_const_bb.hi).x) = (max((max((__cuda_local_var_115873_16_non_const_ps.x0), (__cuda_local_var_115873_16_non_const_ps.x1))), (__cuda_local_var_115873_16_non_const_ps.x2)));
+# 92 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115893_22_non_const_bb.hi).y) = (max((max((__cuda_local_var_115873_16_non_const_ps.y0), (__cuda_local_var_115873_16_non_const_ps.y1))), (__cuda_local_var_115873_16_non_const_ps.y2)));
+# 262 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} {
+# 263 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+if (!(_Z23isBBBetweenSamples_cudaR16boundingBoxFixPt((&__cuda_local_var_115893_22_non_const_bb))))
+# 264 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+{
+# 281 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+(__T211 = (middles + (__iAtomicAdd(index, 1)))) , ((void)((((((((((((((((__T211->__b_9Primitive).binID) = ((__cuda_local_var_115873_16_non_const_ps.__b_9Primitive).binID)) , ((void)((__T211->icol0) = (__cuda_local_var_115873_16_non_const_ps.icol0)))) , ((void)((__T211->icol1) = (__cuda_local_var_115873_16_non_const_ps.icol1)))) , ((void)((__T211->icol2) = (__cuda_local_var_115873_16_non_const_ps.icol2)))) , ((void)((__T211->x0) = (__cuda_local_var_115873_16_non_const_ps.x0)))) , ((void)((__T211->y0) = (__cuda_local_var_115873_16_non_const_ps.y0)))) , ((void)((__T211->z0) = (__cuda_local_var_115873_16_non_const_ps.z0)))) , ((void)((__T211->x1) = (__cuda_local_var_115873_16_non_const_ps.x1)))) , ((void)((__T211->y1) = (__cuda_local_var_115873_16_non_const_ps.y1)))) , ((void)((__T211->z1) = (__cuda_local_var_115873_16_non_const_ps.z1)))) , ((void)((__T211->x2) = (__cuda_local_var_115873_16_non_const_ps.x2)))) , ((void)((__T211->y2) = (__cuda_local_var_115873_16_non_const_ps.y2)))) , ((void)((__T211->z2) = (__cuda_local_var_115873_16_non_const_ps.z2)))) , __T211));
+# 283 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} }
+# 284 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} }
+# 285 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+} 
+# 285 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/vertexShader.h"
+}}
+# 54 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN11RasterStage11process_newE11raster_striP5PixelPi(
+# 54 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+struct raster_stri p, 
+# 54 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+struct Pixel *pixels, 
+# 54 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+int *index){
+# 54 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 55 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 55 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T212;
+# 56 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T213;
+# 57 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T214;
+# 58 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T215;
+# 59 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T216;
+# 60 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T217;
+# 61 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned __T218;
+# 62 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned __T219;
+# 63 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T220;
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T221;
+# 65 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ const int *__T222;
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ const int *__T223;
+# 67 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec2i __T224;
+# 68 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned __T225;
+# 69 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __T226;
+# 70 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned __T227;
+# 71 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __T228;
+# 72 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned __T229;
+# 73 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __T230;
+# 57 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115928_8_non_const_gid;
+# 60 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct boundingBoxFixPt __cuda_local_var_115931_21_non_const_bb;
+# 65 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec2i __cuda_local_var_115936_11_non_const_binBeg;
+# 65 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec2i __cuda_local_var_115936_19_non_const_binEnd;
+# 70 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec2i __cuda_local_var_115941_11_non_const_pixelBeg;
+# 70 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec2i __cuda_local_var_115941_21_non_const_pixelEnd;
+# 78 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115949_8_non_const_x1mx0;
+# 79 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115950_8_non_const_x2mx1;
+# 80 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115951_8_non_const_x0mx2;
+# 81 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115952_8_non_const_y1my0;
+# 82 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115953_8_non_const_y2my1;
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115954_8_non_const_y0my2;
+# 85 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115956_8_non_const_barydenom;
+# 86 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ float __cuda_local_var_115957_10_non_const_onebybary;
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec2i __cuda_local_var_115961_11_non_const_pixelBegCenter;
+# 94 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115965_8_non_const_rowsume0;
+# 95 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115966_8_non_const_rowsume1;
+# 96 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115967_8_non_const_rowsume2;
+# 101 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __cuda_local_var_115972_11_non_const_vcol0;
+# 102 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __cuda_local_var_115973_11_non_const_vcol1;
+# 103 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __cuda_local_var_115974_11_non_const_vcol2;
+# 113 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115976_8_non_const_step0x;
+# 114 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115977_8_non_const_step1x;
+# 115 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115978_8_non_const_step2x;
+# 117 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115980_8_non_const_step0y;
+# 118 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115981_8_non_const_step1y;
+# 119 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115982_8_non_const_step2y;
+# 121 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ __nv_bool __cuda_local_var_115984_9_non_const_bFullCov;
+# 136 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned long long __cuda_local_var_115999_23_non_const_sampleMask;
+# 57 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115928_8_non_const_gid = ((int)(((blockDim.x) * (blockIdx.x)) + (threadIdx.x)));
+# 58 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115928_8_non_const_gid = 0;
+# 61 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 103 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115931_21_non_const_bb.lo).x) = ((__T212 = (min((min((p.x0), (p.x1))), (p.x2)))) , ((int)(((unsigned)__T212) & 4294967040U)));
+# 104 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115931_21_non_const_bb.lo).y) = ((__T213 = (min((min((p.y0), (p.y1))), (p.y2)))) , ((int)(((unsigned)__T213) & 4294967040U)));
+# 105 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115931_21_non_const_bb.hi).x) = ((__T214 = (max((max((p.x0), (p.x1))), (p.x2)))) , ((int)(((unsigned)(__T214 + 255)) & 4294967040U)));
+# 106 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+((__cuda_local_var_115931_21_non_const_bb.hi).y) = ((__T215 = (max((max((p.y0), (p.y1))), (p.y2)))) , ((int)(((unsigned)(__T215 + 255)) & 4294967040U)));
+# 61 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__T216 = ((constState_d.screenSizeX) / 8);
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__T217 = ((int)((p.__b_9Primitive).binID));
+# 167 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+{
+# 168 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__T218 = ((unsigned)(__T217 % __T216));
+# 169 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__T219 = ((unsigned)(__T217 / __T216));
+# 170 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115936_11_non_const_binBeg.x) = ((int)(__T218 * 128U));
+# 171 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115936_11_non_const_binBeg.y) = ((int)(__T219 * 128U));
+# 172 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115936_19_non_const_binEnd.x) = ((__cuda_local_var_115936_11_non_const_binBeg.x) + 128);
+# 173 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115936_19_non_const_binEnd.y) = ((__cuda_local_var_115936_11_non_const_binBeg.y) + 128);
+# 174 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+}
+# 66 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 71 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 186 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115941_11_non_const_pixelBeg.x) = (max(((__cuda_local_var_115931_21_non_const_bb.lo).x), (__cuda_local_var_115936_11_non_const_binBeg.x)));
+# 187 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115941_11_non_const_pixelBeg.y) = (max(((__cuda_local_var_115931_21_non_const_bb.lo).y), (__cuda_local_var_115936_11_non_const_binBeg.y)));
+# 188 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115941_21_non_const_pixelEnd.x) = (min(((__cuda_local_var_115931_21_non_const_bb.hi).x), (__cuda_local_var_115936_19_non_const_binEnd.x)));
+# 189 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+(__cuda_local_var_115941_21_non_const_pixelEnd.y) = (min(((__cuda_local_var_115931_21_non_const_bb.hi).y), (__cuda_local_var_115936_19_non_const_binEnd.y)));
+# 71 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 78 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115949_8_non_const_x1mx0 = ((p.x1) - (p.x0));
+# 79 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115950_8_non_const_x2mx1 = ((p.x2) - (p.x1));
+# 80 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115951_8_non_const_x0mx2 = ((p.x0) - (p.x2));
+# 81 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115952_8_non_const_y1my0 = ((p.y1) - (p.y0));
+# 82 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115953_8_non_const_y2my1 = ((p.y2) - (p.y1));
+# 83 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115954_8_non_const_y0my2 = ((p.y0) - (p.y2));
+# 85 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115956_8_non_const_barydenom = (((-__cuda_local_var_115954_8_non_const_y0my2) * __cuda_local_var_115949_8_non_const_x1mx0) + (__cuda_local_var_115951_8_non_const_x0mx2 * __cuda_local_var_115952_8_non_const_y1my0));
+# 86 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115957_10_non_const_onebybary = ((1.0F) / ((float)__cuda_local_var_115956_8_non_const_barydenom));
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+memset(((void *)((char *)(&__cuda_local_var_115961_11_non_const_pixelBegCenter))), 0, 8UL);
+# 90 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115961_11_non_const_pixelBegCenter = (((__T222 = ((const int *)(((*((int *)(&__T220))) = ((__cuda_local_var_115941_11_non_const_pixelBeg.x) + 8)) , (&__T220)))) , ((void)(__T223 = ((const int *)(((*((int *)(&__T221))) = ((__cuda_local_var_115941_11_non_const_pixelBeg.y) + 8)) , (&__T221)))))) , ((((__T224.x) = (*__T222)) , ((void)((__T224.y) = (*__T223)))) , __T224));
+# 94 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115965_8_non_const_rowsume0 = ((((__cuda_local_var_115961_11_non_const_pixelBegCenter.y) - (p.y0)) * __cuda_local_var_115949_8_non_const_x1mx0) - (((__cuda_local_var_115961_11_non_const_pixelBegCenter.x) - (p.x0)) * __cuda_local_var_115952_8_non_const_y1my0));
+# 95 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115966_8_non_const_rowsume1 = ((((__cuda_local_var_115961_11_non_const_pixelBegCenter.y) - (p.y1)) * __cuda_local_var_115950_8_non_const_x2mx1) - (((__cuda_local_var_115961_11_non_const_pixelBegCenter.x) - (p.x1)) * __cuda_local_var_115953_8_non_const_y2my1));
+# 96 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115967_8_non_const_rowsume2 = ((((__cuda_local_var_115961_11_non_const_pixelBegCenter.y) - (p.y2)) * __cuda_local_var_115951_8_non_const_x0mx2) - (((__cuda_local_var_115961_11_non_const_pixelBegCenter.x) - (p.x2)) * __cuda_local_var_115954_8_non_const_y0my2));
+# 101 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+memset(((void *)((char *)(&__cuda_local_var_115972_11_non_const_vcol0))), 0, 12UL);
+# 101 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115972_11_non_const_vcol0 = ((__T225 = (p.icol0)) , (((((__T226.x) = ((float)(fdividef(((double)((float)((__T225 >> 0) & 255U))), (255.0))))) , ((void)((__T226.y) = ((float)(fdividef(((double)((float)((__T225 >> 8) & 255U))), (255.0))))))) , ((void)((__T226.z) = ((float)(fdividef(((double)((float)((__T225 >> 16) & 255U))), (255.0))))))) , __T226));
+# 102 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+memset(((void *)((char *)(&__cuda_local_var_115973_11_non_const_vcol1))), 0, 12UL);
+# 102 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115973_11_non_const_vcol1 = ((__T227 = (p.icol1)) , (((((__T228.x) = ((float)(fdividef(((double)((float)((__T227 >> 0) & 255U))), (255.0))))) , ((void)((__T228.y) = ((float)(fdividef(((double)((float)((__T227 >> 8) & 255U))), (255.0))))))) , ((void)((__T228.z) = ((float)(fdividef(((double)((float)((__T227 >> 16) & 255U))), (255.0))))))) , __T228));
+# 103 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+memset(((void *)((char *)(&__cuda_local_var_115974_11_non_const_vcol2))), 0, 12UL);
+# 103 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115974_11_non_const_vcol2 = ((__T229 = (p.icol2)) , (((((__T230.x) = ((float)(fdividef(((double)((float)((__T229 >> 0) & 255U))), (255.0))))) , ((void)((__T230.y) = ((float)(fdividef(((double)((float)((__T229 >> 8) & 255U))), (255.0))))))) , ((void)((__T230.z) = ((float)(fdividef(((double)((float)((__T229 >> 16) & 255U))), (255.0))))))) , __T230));
+# 113 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115976_8_non_const_step0x = (-(__cuda_local_var_115952_8_non_const_y1my0 << 4));
+# 114 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115977_8_non_const_step1x = (-(__cuda_local_var_115953_8_non_const_y2my1 << 4));
+# 115 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115978_8_non_const_step2x = (-(__cuda_local_var_115954_8_non_const_y0my2 << 4));
+# 117 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115980_8_non_const_step0y = (__cuda_local_var_115949_8_non_const_x1mx0 << 4);
+# 118 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115981_8_non_const_step1y = (__cuda_local_var_115950_8_non_const_x2mx1 << 4);
+# 119 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115982_8_non_const_step2y = (__cuda_local_var_115951_8_non_const_x0mx2 << 4);
+# 121 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115984_9_non_const_bFullCov = ((__nv_bool)0);
+# 122 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 122 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T231;
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T232;
+# 124 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T233;
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115986_9_non_const_TAoffset0;
+# 124 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115987_9_non_const_TAoffset1;
+# 125 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115988_9_non_const_TAoffset2;
+# 127 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115990_9_non_const_trivialA0;
+# 128 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115991_9_non_const_trivialA1;
+# 129 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_115992_9_non_const_trivialA2;
+# 123 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115986_9_non_const_TAoffset0 = ((((__T231 = 0) , ((void)(__T231 += ((__cuda_local_var_115952_8_non_const_y1my0 >= 0) ? __cuda_local_var_115976_8_non_const_step0x : 0)))) , ((void)(__T231 += ((__cuda_local_var_115949_8_non_const_x1mx0 < 0) ? __cuda_local_var_115980_8_non_const_step0y : 0)))) , __T231);
+# 124 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115987_9_non_const_TAoffset1 = ((((__T232 = 0) , ((void)(__T232 += ((__cuda_local_var_115953_8_non_const_y2my1 >= 0) ? __cuda_local_var_115977_8_non_const_step1x : 0)))) , ((void)(__T232 += ((__cuda_local_var_115950_8_non_const_x2mx1 < 0) ? __cuda_local_var_115981_8_non_const_step1y : 0)))) , __T232);
+# 125 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115988_9_non_const_TAoffset2 = ((((__T233 = 0) , ((void)(__T233 += ((__cuda_local_var_115954_8_non_const_y0my2 >= 0) ? __cuda_local_var_115978_8_non_const_step2x : 0)))) , ((void)(__T233 += ((__cuda_local_var_115951_8_non_const_x0mx2 < 0) ? __cuda_local_var_115982_8_non_const_step2y : 0)))) , __T233);
+# 127 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115990_9_non_const_trivialA0 = (__cuda_local_var_115965_8_non_const_rowsume0 + (__cuda_local_var_115986_9_non_const_TAoffset0 << 3));
+# 128 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115991_9_non_const_trivialA1 = (__cuda_local_var_115966_8_non_const_rowsume1 + (__cuda_local_var_115987_9_non_const_TAoffset1 << 3));
+# 129 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115992_9_non_const_trivialA2 = (__cuda_local_var_115967_8_non_const_rowsume2 + (__cuda_local_var_115988_9_non_const_TAoffset2 << 3));
+# 130 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115984_9_non_const_bFullCov = ((__nv_bool)((((unsigned)((__cuda_local_var_115990_9_non_const_trivialA0 | __cuda_local_var_115991_9_non_const_trivialA1) | __cuda_local_var_115992_9_non_const_trivialA2)) & 2147483648U) == 0U));
+# 131 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} {
+# 138 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+if (__cuda_local_var_115984_9_non_const_bFullCov)
+# 139 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 140 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115999_23_non_const_sampleMask = 18446744073709551615ULL;
+# 141 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 143 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+else 
+# 143 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 144 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115999_23_non_const_sampleMask = 0ULL;
+# 144 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 145 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int y;
+# 145 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+y = (__cuda_local_var_115941_11_non_const_pixelBeg.y); {
+# 145 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+for (; (y < (__cuda_local_var_115941_21_non_const_pixelEnd.y)); y += 16)
+# 145 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 146 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116009_10_non_const_e0test;
+# 147 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116010_10_non_const_e1test;
+# 148 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116011_10_non_const_e2test;
+# 146 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116009_10_non_const_e0test = __cuda_local_var_115965_8_non_const_rowsume0;
+# 147 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116010_10_non_const_e1test = __cuda_local_var_115966_8_non_const_rowsume1;
+# 148 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116011_10_non_const_e2test = __cuda_local_var_115967_8_non_const_rowsume2;
+# 148 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 149 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int x;
+# 149 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+x = (__cuda_local_var_115941_11_non_const_pixelBeg.x); {
+# 149 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+for (; (x < (__cuda_local_var_115941_21_non_const_pixelEnd.x)); x += 16)
+# 149 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 149 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 150 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+if (((__cuda_local_var_116009_10_non_const_e0test | __cuda_local_var_116010_10_non_const_e1test) | __cuda_local_var_116011_10_non_const_e2test) >= 0)
+# 151 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 153 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116016_12_non_const_bitID;
+# 153 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116016_12_non_const_bitID = (((x - (__cuda_local_var_115936_11_non_const_binBeg.x)) + ((y - (__cuda_local_var_115936_11_non_const_binBeg.y)) << 3)) >> 4);
+# 155 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115999_23_non_const_sampleMask |= ((unsigned long long)(1LL << __cuda_local_var_116016_12_non_const_bitID));
+# 156 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} }
+# 157 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116009_10_non_const_e0test += __cuda_local_var_115976_8_non_const_step0x;
+# 158 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116010_10_non_const_e1test += __cuda_local_var_115977_8_non_const_step1x;
+# 159 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116011_10_non_const_e2test += __cuda_local_var_115978_8_non_const_step2x;
+# 160 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} }
+# 160 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 161 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115965_8_non_const_rowsume0 += __cuda_local_var_115980_8_non_const_step0y;
+# 162 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115966_8_non_const_rowsume1 += __cuda_local_var_115981_8_non_const_step1y;
+# 163 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_115967_8_non_const_rowsume2 += __cuda_local_var_115982_8_non_const_step2y;
+# 164 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} }
+# 164 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 165 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} } {
+# 169 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+if (__cuda_local_var_115999_23_non_const_sampleMask != 0ULL)
+# 170 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 170 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __T234;
+# 171 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __T235;
+# 171 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116034_9_non_const_covCount;
+# 172 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ unsigned long long __cuda_local_var_116035_24_non_const_tempMask;
+# 174 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116037_9_non_const_rowsume1;
+# 176 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116039_9_non_const_rowsume2;
+# 178 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ float __cuda_local_var_116041_11_non_const_z0mz2;
+# 179 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ float __cuda_local_var_116042_11_non_const_z1mz2;
+# 181 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __cuda_local_var_116044_12_non_const_dcol0mcol2;
+# 182 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __cuda_local_var_116045_12_non_const_dcol1mcol2;
+# 171 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116034_9_non_const_covCount = (__popcll(__cuda_local_var_115999_23_non_const_sampleMask));
+# 172 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116035_24_non_const_tempMask = __cuda_local_var_115999_23_non_const_sampleMask;
+# 174 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116037_9_non_const_rowsume1 = (((((__cuda_local_var_115936_11_non_const_binBeg.y) + 8) - (p.y1)) * __cuda_local_var_115950_8_non_const_x2mx1) - ((((__cuda_local_var_115936_11_non_const_binBeg.x) + 8) - (p.x1)) * __cuda_local_var_115953_8_non_const_y2my1));
+# 176 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116039_9_non_const_rowsume2 = (((((__cuda_local_var_115936_11_non_const_binBeg.y) + 8) - (p.y2)) * __cuda_local_var_115951_8_non_const_x0mx2) - ((((__cuda_local_var_115936_11_non_const_binBeg.x) + 8) - (p.x2)) * __cuda_local_var_115954_8_non_const_y0my2));
+# 178 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116041_11_non_const_z0mz2 = ((p.z0) - (p.z2));
+# 179 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116042_11_non_const_z1mz2 = ((p.z1) - (p.z2));
+# 181 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+memset(((void *)((char *)(&__cuda_local_var_116044_12_non_const_dcol0mcol2))), 0, 12UL);
+# 181 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116044_12_non_const_dcol0mcol2 = (((((__T234.x) = ((((const struct cvec3f *)(&__cuda_local_var_115972_11_non_const_vcol0))->x) - (((const struct cvec3f *)(&__cuda_local_var_115974_11_non_const_vcol2))->x))) , ((void)((__T234.y) = ((((const struct cvec3f *)(&__cuda_local_var_115972_11_non_const_vcol0))->y) - (((const struct cvec3f *)(&__cuda_local_var_115974_11_non_const_vcol2))->y))))) , ((void)((__T234.z) = ((((const struct cvec3f *)(&__cuda_local_var_115972_11_non_const_vcol0))->z) - (((const struct cvec3f *)(&__cuda_local_var_115974_11_non_const_vcol2))->z))))) , __T234);
+# 182 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+memset(((void *)((char *)(&__cuda_local_var_116045_12_non_const_dcol1mcol2))), 0, 12UL);
+# 182 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116045_12_non_const_dcol1mcol2 = (((((__T235.x) = ((((const struct cvec3f *)(&__cuda_local_var_115973_11_non_const_vcol1))->x) - (((const struct cvec3f *)(&__cuda_local_var_115974_11_non_const_vcol2))->x))) , ((void)((__T235.y) = ((((const struct cvec3f *)(&__cuda_local_var_115973_11_non_const_vcol1))->y) - (((const struct cvec3f *)(&__cuda_local_var_115974_11_non_const_vcol2))->y))))) , ((void)((__T235.z) = ((((const struct cvec3f *)(&__cuda_local_var_115973_11_non_const_vcol1))->z) - (((const struct cvec3f *)(&__cuda_local_var_115974_11_non_const_vcol2))->z))))) , __T235);
+# 182 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 184 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int fragID;
+# 184 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+fragID = 0; {
+# 184 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+for (; (fragID < __cuda_local_var_116034_9_non_const_covCount); fragID++)
+# 185 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 185 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __T236;
+# 186 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116049_10_non_const_x;
+# 186 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116049_13_non_const_y;
+# 188 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116051_10_non_const_e1test;
+# 189 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116052_10_non_const_e2test;
+# 198 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ float __cuda_local_var_116061_12_non_const_alpha;
+# 199 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ float __cuda_local_var_116062_12_non_const_beta;
+# 201 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ float __cuda_local_var_116064_12_non_const__zbyw;
+# 203 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116066_10_non_const_pixelID;
+# 204 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116067_10_non_const_remoteZi;
+# 205 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int __cuda_local_var_116068_10_non_const__zbywi;
+# 206 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ int *__cuda_local_var_116069_11_non_const_depthintptr;
+# 214 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ __nv_bool __cuda_local_var_116077_11_non_const_depthPassed;
+# 187 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 278 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__T236 = ((__ffsll(((long long)(*((const unsigned long long *)(&__cuda_local_var_116035_24_non_const_tempMask)))))) - 1);
+# 279 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__cuda_local_var_116049_10_non_const_x = (__T236 & 7);
+# 280 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/rasterMacros.h"
+__cuda_local_var_116049_13_non_const_y = (__T236 >> 3);
+# 187 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 188 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116051_10_non_const_e1test = ((__cuda_local_var_116037_9_non_const_rowsume1 + (__cuda_local_var_116049_10_non_const_x * __cuda_local_var_115977_8_non_const_step1x)) + (__cuda_local_var_116049_13_non_const_y * __cuda_local_var_115981_8_non_const_step1y));
+# 189 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116052_10_non_const_e2test = ((__cuda_local_var_116039_9_non_const_rowsume2 + (__cuda_local_var_116049_10_non_const_x * __cuda_local_var_115978_8_non_const_step2x)) + (__cuda_local_var_116049_13_non_const_y * __cuda_local_var_115982_8_non_const_step2y));
+# 194 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116049_10_non_const_x = ((__cuda_local_var_116049_10_non_const_x << 4) + (__cuda_local_var_115936_11_non_const_binBeg.x));
+# 196 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116049_13_non_const_y = ((__cuda_local_var_116049_13_non_const_y << 4) + (__cuda_local_var_115936_11_non_const_binBeg.y));
+# 198 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116061_12_non_const_alpha = (((float)__cuda_local_var_116051_10_non_const_e1test) * __cuda_local_var_115957_10_non_const_onebybary);
+# 199 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116062_12_non_const_beta = (((float)__cuda_local_var_116052_10_non_const_e2test) * __cuda_local_var_115957_10_non_const_onebybary);
+# 201 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116064_12_non_const__zbyw = (((*((const float *)(&(p.z2)))) + ((*((const float *)(&__cuda_local_var_116061_12_non_const_alpha))) * (*((const float *)(&__cuda_local_var_116041_11_non_const_z0mz2))))) + ((*((const float *)(&__cuda_local_var_116062_12_non_const_beta))) * (*((const float *)(&__cuda_local_var_116042_11_non_const_z1mz2)))));
+# 203 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116066_10_non_const_pixelID = (((__cuda_local_var_116049_13_non_const_y * (constState_d.screenSizeX)) + __cuda_local_var_116049_10_non_const_x) >> 4);
+# 204 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116067_10_non_const_remoteZi = (__float_as_int((1.0F)));
+# 205 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116068_10_non_const__zbywi = (__float_as_int(__cuda_local_var_116064_12_non_const__zbyw));
+# 206 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116069_11_non_const_depthintptr = ((int *)(((mutableState_d.zBuffer)) + __cuda_local_var_116066_10_non_const_pixelID)); {
+# 209 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+do
+# 209 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 211 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116067_10_non_const_remoteZi = (__iAtomicMin(__cuda_local_var_116069_11_non_const_depthintptr, __cuda_local_var_116068_10_non_const__zbywi));
+# 212 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} while (__cuda_local_var_116067_10_non_const_remoteZi > __cuda_local_var_116068_10_non_const__zbywi); }
+# 214 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116077_11_non_const_depthPassed = ((__nv_bool)(__cuda_local_var_116067_10_non_const_remoteZi >= __cuda_local_var_116068_10_non_const__zbywi)); {
+# 216 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+if (__cuda_local_var_116077_11_non_const_depthPassed)
+# 217 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 217 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __T237;
+# 218 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct Pixel *__T238;
+# 218 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct cvec3f __cuda_local_var_116081_14_non_const_colorf;
+# 236 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+ struct Pixel __cuda_local_var_116088_13_non_const_pi;
+# 221 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+(__cuda_local_var_116081_14_non_const_colorf.x) = (((*((const float *)(&(__cuda_local_var_115974_11_non_const_vcol2.x)))) + ((*((const float *)(&__cuda_local_var_116061_12_non_const_alpha))) * (*((const float *)(&(__cuda_local_var_116044_12_non_const_dcol0mcol2.x)))))) + ((*((const float *)(&__cuda_local_var_116062_12_non_const_beta))) * (*((const float *)(&(__cuda_local_var_116045_12_non_const_dcol1mcol2.x))))));
+# 222 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+(__cuda_local_var_116081_14_non_const_colorf.y) = (((*((const float *)(&(__cuda_local_var_115974_11_non_const_vcol2.y)))) + ((*((const float *)(&__cuda_local_var_116061_12_non_const_alpha))) * (*((const float *)(&(__cuda_local_var_116044_12_non_const_dcol0mcol2.y)))))) + ((*((const float *)(&__cuda_local_var_116062_12_non_const_beta))) * (*((const float *)(&(__cuda_local_var_116045_12_non_const_dcol1mcol2.y))))));
+# 223 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+(__cuda_local_var_116081_14_non_const_colorf.z) = (((*((const float *)(&(__cuda_local_var_115974_11_non_const_vcol2.z)))) + ((*((const float *)(&__cuda_local_var_116061_12_non_const_alpha))) * (*((const float *)(&(__cuda_local_var_116044_12_non_const_dcol0mcol2.z)))))) + ((*((const float *)(&__cuda_local_var_116062_12_non_const_beta))) * (*((const float *)(&(__cuda_local_var_116045_12_non_const_dcol1mcol2.z))))));
+# 236 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+{
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+{
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+}
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+(__cuda_local_var_116088_13_non_const_pi.color) = 0U;
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+((__cuda_local_var_116088_13_non_const_pi.pos).x) = 0U;
+# 64 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/api/include/piko/builtinTypes.h"
+((__cuda_local_var_116088_13_non_const_pi.pos).y) = 0U;
+# 236 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 237 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+((__cuda_local_var_116088_13_non_const_pi.pos).x) = ((unsigned)(__cuda_local_var_116049_10_non_const_x >> 4));
+# 238 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+((__cuda_local_var_116088_13_non_const_pi.pos).y) = ((unsigned)(__cuda_local_var_116049_13_non_const_y >> 4));
+# 239 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+(__cuda_local_var_116088_13_non_const_pi.color) = ((__T237 = __cuda_local_var_116081_14_non_const_colorf) , (((4278190080U | (((unsigned)(__float2uint_rz(((double)((float)((__T237.z) * (255.0F))))))) << 16)) | (((unsigned)(__float2uint_rz(((double)((float)((__T237.y) * (255.0F))))))) << 8)) | ((unsigned)(__float2uint_rz(((double)((float)((__T237.x) * (255.0F)))))))));
+# 247 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+(__T238 = (pixels + (__iAtomicAdd(index, 1)))) , ((void)(((((__T238->__b_9Primitive) = (__cuda_local_var_116088_13_non_const_pi.__b_9Primitive)) , ((void)(_ZN6cvec2uaSERS_((&(__T238->pos)), (&(__cuda_local_var_116088_13_non_const_pi.pos)))))) , ((void)((__T238->color) = (__cuda_local_var_116088_13_non_const_pi.color)))) , __T238));
+# 248 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} }
+# 249 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+__cuda_local_var_116035_24_non_const_tempMask &= (__cuda_local_var_116035_24_non_const_tempMask - 1ULL);
+# 250 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} }
+# 250 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}
+# 251 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} }
+# 252 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+} 
+# 252 "/home/zhengzhen/workspace/hybridpipe/basicversion/rasterizationGPU/raster.h"
+}}
